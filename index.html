@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>هكر الوزاري</title>
+    <title>ساعد للصحة والتعليم</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700;800;900&display=block" rel="stylesheet">
@@ -756,8 +756,24 @@
 
     <div id="intro-screen" class="auth-overlay flex-col custom-intro-bg" style="z-index: 10000; position: relative;">
         <div class="hacker-logo-wrapper mb-2 mt-4">
-            <i class="fas fa-user-secret liquid-icon-custom"></i>
-        </div>
+    <svg viewBox="0 0 120 120" class="w-28 h-28" style="filter: drop-shadow(0 10px 20px rgba(79,70,229,0.3));">
+        <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#4F46E5"/>
+                <stop offset="100%" stop-color="#9333EA"/>
+            </linearGradient>
+            <linearGradient id="heartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="100%" stop-color="#ec4899"/>
+            </linearGradient>
+        </defs>
+        <path d="M30 22 Q30 12 40 12 L80 12 Q90 12 90 22 L90 78 Q90 88 80 88 L52 88 L40 102 L40 88 L40 88 Q30 88 30 78 Z" fill="url(#logoGrad)" opacity="0.95"/>
+        <line x1="42" y1="34" x2="78" y2="34" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="42" y1="46" x2="78" y2="46" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="42" y1="58" x2="62" y2="58" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <path d="M60 96 C60 96 44 84 44 74 C44 68 49 64 54 64 C57 64 60 66 60 68 C60 66 63 64 66 64 C71 64 76 68 76 74 C76 84 60 96 60 96 Z" fill="url(#heartGrad)"/>
+    </svg>
+</div>
         
         <svg viewBox="0 0 400 120" class="w-72 h-24 mb-2">
             <defs>
@@ -766,12 +782,12 @@
                     <stop offset="100%" stop-color="#9333EA" />
                 </linearGradient>
             </defs>
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="'Aref Ruqaa', serif" font-size="65" font-weight="bold" fill="transparent" stroke="url(#strokeGrad)" stroke-width="2.5" class="live-draw-text" dir="rtl">هكر الوزاري</text>
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="'Aref Ruqaa', serif" font-size="32" font-weight="bold" fill="transparent" stroke="url(#strokeGrad)" stroke-width="2.2" class="live-draw-text" dir="rtl">ساعد للصحة والتعليم</text>
         </svg>
         <div class="absolute bottom-[20%] left-1/2 transform -translate-x-1/2 text-center w-full">
             <p class="najafi-kufi-text text-indigo-900/60 font-black text-lg tracking-widest">
-                بفخر منتج نجفي
-            </p>
+    نساعدك علمياً
+</p>
         </div>
     </div>
 
@@ -862,14 +878,30 @@
     </div>
 
     <div id="auth-loading" class="auth-loading hidden">
-        <i class="fas fa-user-secret liquid-icon" style="font-size: 80px; margin-bottom: 20px;"></i>
-        <p class="text-indigo-700 font-black animate-pulse" id="auth-loading-text">جاري المعالجة...</p>
-    </div>
+    <svg viewBox="0 0 120 120" class="w-24 h-24 mb-4" style="filter: drop-shadow(0 8px 16px rgba(79,70,229,0.3));">
+        <defs>
+            <linearGradient id="loadLogoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#4F46E5"/>
+                <stop offset="100%" stop-color="#9333EA"/>
+            </linearGradient>
+            <linearGradient id="loadHeartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="100%" stop-color="#ec4899"/>
+            </linearGradient>
+        </defs>
+        <path d="M30 22 Q30 12 40 12 L80 12 Q90 12 90 22 L90 78 Q90 88 80 88 L52 88 L40 102 L40 88 L40 88 Q30 88 30 78 Z" fill="url(#loadLogoGrad)" opacity="0.95"/>
+        <line x1="42" y1="34" x2="78" y2="34" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="42" y1="46" x2="78" y2="46" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="42" y1="58" x2="62" y2="58" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <path d="M60 96 C60 96 44 84 44 74 C44 68 49 64 54 64 C57 64 60 66 60 68 C60 66 63 64 66 64 C71 64 76 68 76 74 C76 84 60 96 60 96 Z" fill="url(#loadHeartGrad)"/>
+    </svg>
+    <p class="text-indigo-700 font-black animate-pulse" id="auth-loading-text">جاري المعالجة...</p>
+</div>
 
     <div id="auth-screen" class="auth-overlay hidden">
         <div class="w-full max-w-md p-8 h-full overflow-y-auto flex flex-col justify-center">
             <div class="text-center mb-8">
-                <h1 class="text-3xl font-black text-indigo-600 mb-2">هكر الوزاري</h1>
+                <h1 class="text-2xl font-black text-indigo-600 mb-2 whitespace-nowrap">ساعد للصحة والتعليم</h1>
             </div>
             <div class="auth-tabs">
                 <div id="tab-login-btn" onclick="switchAuthTab('login')" class="auth-tab active">تسجيل الدخول</div>
@@ -881,7 +913,7 @@
                 <div class="relative inline-block mb-4">
                     <i class="fas fa-user-secret text-[80px] text-indigo-600 bg-indigo-50 p-6 rounded-full shadow-sm"></i>
                 </div>
-                <h1 class="text-3xl font-black text-indigo-600 tracking-tight">هكر الوزاري</h1>
+                <h1 class="text-2xl font-black text-indigo-600 tracking-tight whitespace-nowrap">ساعد للصحة والتعليم</h1>
                 <h2 class="text-sm font-bold text-gray-400 mt-2">مرحباً بعودتك!</h2>
             </div>
             
@@ -969,10 +1001,10 @@
 
     <div id="main-app" class="hidden w-full h-full relative">
         <div class="absolute top-0 w-full h-20 bg-white/95 backdrop-blur-sm shadow-sm z-30 flex items-center justify-between px-5 pt-2">
-            <div>
-                <h1 class="font-black text-lg text-indigo-900">هكر الوزاري</h1>
-                <p id="header-grade-badge" class="text-xs text-indigo-600 font-bold bg-indigo-50 px-2 py-0.5 rounded-full hidden">...</p>
-            </div>
+            <div class="flex-1 min-w-0 pr-2">
+    <h1 class="font-black text-base text-indigo-900 whitespace-nowrap overflow-hidden text-ellipsis">ساعد للصحة والتعليم</h1>
+    <p id="header-grade-badge" class="text-xs text-indigo-600 font-bold bg-indigo-50 px-2 py-0.5 rounded-full hidden">...</p>
+</div>
             <div class="flex items-center gap-3">
                 <div id="notification-header-btn" class="notification-btn hidden" onclick="openPage('screen-notifications')">
                     <i class="fas fa-bell"></i>
@@ -1486,15 +1518,27 @@
                     <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600"><i class="fas fa-images text-xl"></i></div>
                     <span class="font-bold text-sm text-gray-700">الأخبار</span>
                 </button>
-                <button onclick="openPage('screen-admin-ai-extract')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50">
-                    <div class="w-12 h-12 bg-fuchsia-100 rounded-full flex items-center justify-center text-fuchsia-600">
-                        <i class="fas fa-robot text-xl"></i>
-                    </div>
-                    <span class="font-bold text-sm text-gray-700">استخراج AI</span>
-                </button>
-            </div>
-        </div>
+                <button onclick="openPage('screen-admin-ai-extract')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50" data-admin-section="ai-extract">
+    <div class="w-12 h-12 bg-fuchsia-100 rounded-full flex items-center justify-center text-fuchsia-600">
+        <i class="fas fa-robot text-xl"></i>
     </div>
+    <span class="font-bold text-sm text-gray-700">استخراج AI</span>
+</button>
+<button onclick="openPage('screen-admin-sahad-additions')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50" data-admin-section="sahad-additions">
+    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600">
+        <i class="fas fa-plus-circle text-xl"></i>
+    </div>
+    <span class="font-bold text-sm text-gray-700">إضافات ساعد</span>
+</button>
+<button onclick="openPage('screen-admin-add-moderator')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50" data-admin-section="add-moderator">
+    <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+        <i class="fas fa-user-shield text-xl"></i>
+    </div>
+    <span class="font-bold text-sm text-gray-700">إضافة مشرف</span>
+</button>
+</div>
+</div>
+</div>
 
     <div id="screen-admin-panel" class="screen pt-20">
         <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
@@ -1711,20 +1755,23 @@
     </div> 
     
     <div class="fixed bottom-4 left-4 right-4 bg-white/95 backdrop-blur-xl border border-gray-100 flex justify-around items-center h-16 rounded-full z-50 shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
-        <div onclick="switchTab('challenges')" class="nav-item active flex-1 flex flex-col items-center justify-center h-full cursor-pointer">
-            <i class="fas fa-gamepad text-xl mb-1"></i><span class="text-[10px] font-bold">التحديات</span>
-        </div>
-        <div onclick="switchTab('leaderboard')" class="nav-item flex-1 flex flex-col items-center justify-center h-full cursor-pointer text-gray-400">
-            <i class="fas fa-trophy text-xl mb-1"></i><span class="text-[10px] font-bold">التصنيف</span>
-        </div>
-        <div onclick="switchTab('news')" class="nav-item flex-1 flex flex-col items-center justify-center h-full cursor-pointer text-gray-400">
-            <i class="fas fa-newspaper text-xl mb-1"></i><span class="text-[10px] font-bold">الأخبار</span>
-        </div>
-        <div onclick="switchTab('profile')" class="nav-item flex-1 flex flex-col items-center justify-center h-full cursor-pointer text-gray-400 relative">
-            <i class="fas fa-user text-xl mb-1"></i><span class="text-[10px] font-bold">حسابي</span>
-            <div id="profile-tab-badge" class="red-dot"></div>
-        </div>
+    <div onclick="switchTab('sahad')" class="nav-item active flex-1 flex flex-col items-center justify-center h-full cursor-pointer">
+        <i class="fas fa-hand-holding-heart text-xl mb-1"></i><span class="text-[10px] font-bold">ساعد</span>
     </div>
+    <div onclick="switchTab('challenges')" class="nav-item flex-1 flex flex-col items-center justify-center h-full cursor-pointer text-gray-400">
+        <i class="fas fa-gamepad text-xl mb-1"></i><span class="text-[10px] font-bold">التحديات</span>
+    </div>
+    <div onclick="switchTab('leaderboard')" class="nav-item flex-1 flex flex-col items-center justify-center h-full cursor-pointer text-gray-400">
+        <i class="fas fa-trophy text-xl mb-1"></i><span class="text-[10px] font-bold">التصنيف</span>
+    </div>
+    <div onclick="switchTab('news')" class="nav-item flex-1 flex flex-col items-center justify-center h-full cursor-pointer text-gray-400">
+        <i class="fas fa-newspaper text-xl mb-1"></i><span class="text-[10px] font-bold">الأخبار</span>
+    </div>
+    <div onclick="switchTab('profile')" class="nav-item flex-1 flex flex-col items-center justify-center h-full cursor-pointer text-gray-400 relative">
+        <i class="fas fa-user text-xl mb-1"></i><span class="text-[10px] font-bold">حسابي</span>
+        <div id="profile-tab-badge" class="red-dot"></div>
+    </div>
+</div>
     
     <div id="tab-news" class="screen pt-20 bg-slate-50">
         <div class="absolute top-0 w-full h-20 bg-white/95 backdrop-blur-sm shadow-sm z-30 flex items-center px-5 gap-4">
@@ -1951,8 +1998,24 @@
     <div id="update-packet-screen" class="modal-overlay hidden" style="z-index: 40000 !important; background: rgba(255,255,255,0.95);">
         <div class="text-center p-8">
             <div class="relative mx-auto mb-6 flex justify-center">
-                <i class="fas fa-user-secret liquid-icon" style="font-size: 80px;"></i>
-            </div>
+    <svg viewBox="0 0 120 120" class="w-24 h-24" style="filter: drop-shadow(0 8px 16px rgba(79,70,229,0.3));">
+        <defs>
+            <linearGradient id="updLogoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#4F46E5"/>
+                <stop offset="100%" stop-color="#9333EA"/>
+            </linearGradient>
+            <linearGradient id="updHeartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="100%" stop-color="#ec4899"/>
+            </linearGradient>
+        </defs>
+        <path d="M30 22 Q30 12 40 12 L80 12 Q90 12 90 22 L90 78 Q90 88 80 88 L52 88 L40 102 L40 88 L40 88 Q30 88 30 78 Z" fill="url(#updLogoGrad)" opacity="0.95"/>
+        <line x1="42" y1="34" x2="78" y2="34" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="42" y1="46" x2="78" y2="46" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="42" y1="58" x2="62" y2="58" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <path d="M60 96 C60 96 44 84 44 74 C44 68 49 64 54 64 C57 64 60 66 60 68 C60 66 63 64 66 64 C71 64 76 68 76 74 C76 84 60 96 60 96 Z" fill="url(#updHeartGrad)"/>
+    </svg>
+</div>
             <h2 class="text-2xl font-black text-gray-800 mb-2">تحديث قاعدة البيانات 📚</h2>
             <p class="text-gray-600 font-bold mb-4">جاري تنزيل الأسئلة الجديدة لهاتفك لضمان السرعة...</p>
             <div class="w-64 h-3 bg-gray-200 rounded-full mx-auto overflow-hidden">
@@ -2083,6 +2146,538 @@
             <button onclick="changeUserEmail()" class="w-full bg-purple-600 text-white font-bold py-3 rounded-xl shadow-md hover:bg-purple-700 transition">تأكيد وتغيير</button>
         </div>
     </div>
+    
+    <!-- ==================== قسم ساعد ==================== -->
+
+<div id="tab-sahad" class="screen pt-20">
+    <div class="scroll-container px-5 py-6">
+        <div class="text-center mb-6 mt-2">
+            <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg shadow-indigo-500/30">
+                <i class="fas fa-hand-holding-heart text-white text-2xl"></i>
+            </div>
+            <h2 class="text-2xl font-black text-gray-800">ساعد</h2>
+            <p class="text-xs text-gray-500 font-bold mt-1">منصة خدمية للصحة والتعليم</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+            <button onclick="openPage('screen-sahad-health')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-indigo-50 active:scale-95 transition-all">
+                <div class="w-12 h-12 bg-gradient-to-br from-red-100 to-pink-100 rounded-full flex items-center justify-center text-red-600">
+                    <i class="fas fa-heartbeat text-xl"></i>
+                </div>
+                <span class="font-black text-xs text-gray-700">الصحة</span>
+            </button>
+            <button onclick="openPage('screen-sahad-education')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-indigo-50 active:scale-95 transition-all">
+                <div class="w-12 h-12 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full flex items-center justify-center text-blue-600">
+                    <i class="fas fa-graduation-cap text-xl"></i>
+                </div>
+                <span class="font-black text-xs text-gray-700">التعليم</span>
+            </button>
+            <button onclick="openPage('screen-sahad-general-news')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-indigo-50 active:scale-95 transition-all">
+                <div class="w-12 h-12 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-full flex items-center justify-center text-emerald-600">
+                    <i class="fas fa-bullhorn text-xl"></i>
+                </div>
+                <span class="font-black text-xs text-gray-700">أخبار عامة</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== الصحة ==================== -->
+
+<div id="screen-sahad-health" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="backToSahad()" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-red-700">الصحة 🏥</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="grid grid-cols-2 gap-3">
+            <button onclick="openPage('screen-sahad-health-qa')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-red-50 active:scale-95 transition-all relative">
+                <div class="w-14 h-14 bg-gradient-to-br from-red-100 to-pink-100 rounded-2xl flex items-center justify-center text-red-600">
+                    <i class="fas fa-comments text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">سؤال وجواب</span>
+                <div id="sahad-health-qa-dot" class="red-dot" style="top:8px;right:8px;"></div>
+            </button>
+            <button onclick="openPage('screen-sahad-health-info')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-red-50 active:scale-95 transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center text-blue-600">
+                    <i class="fas fa-info-circle text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">معلومات عامة</span>
+            </button>
+            <button onclick="openPage('screen-sahad-health-jobs')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-red-50 active:scale-95 transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center text-emerald-600">
+                    <i class="fas fa-briefcase text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">فرص عمل</span>
+            </button>
+            <button onclick="openPage('screen-sahad-health-news')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-red-50 active:scale-95 transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-orange-100 to-amber-100 rounded-2xl flex items-center justify-center text-orange-600">
+                    <i class="fas fa-newspaper text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">أخبار وزارة الصحة</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== التعليم ==================== -->
+
+<div id="screen-sahad-education" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="backToSahad()" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-blue-700">التعليم 🎓</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="grid grid-cols-2 gap-3">
+            <button onclick="openPage('screen-sahad-edu-tips')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-blue-50 active:scale-95 transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-yellow-100 to-amber-100 rounded-2xl flex items-center justify-center text-amber-600">
+                    <i class="fas fa-lightbulb text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">نصائح</span>
+            </button>
+            <button onclick="openPage('screen-sahad-edu-qa')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-blue-50 active:scale-95 transition-all relative">
+                <div class="w-14 h-14 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl flex items-center justify-center text-indigo-600">
+                    <i class="fas fa-comments text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">دراسة</span>
+                <div id="sahad-edu-qa-dot" class="red-dot" style="top:8px;right:8px;"></div>
+            </button>
+            <button onclick="openPage('screen-sahad-edu-jobs')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-blue-50 active:scale-95 transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center text-emerald-600">
+                    <i class="fas fa-briefcase text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">فرص عمل</span>
+            </button>
+            <button onclick="openPage('screen-sahad-edu-news')" class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center gap-2 hover:bg-blue-50 active:scale-95 transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-orange-100 to-amber-100 rounded-2xl flex items-center justify-center text-orange-600">
+                    <i class="fas fa-newspaper text-2xl"></i>
+                </div>
+                <span class="font-black text-sm text-gray-800">أخبار وزارة التربية</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== أخبار عامة ==================== -->
+
+<div id="screen-sahad-general-news" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="backToSahad()" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-emerald-700">أخبار عامة 📢</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div id="sahad-general-news-list" class="space-y-4">
+            <p class="text-center text-gray-400 py-10">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== سؤال وجواب - الصحة ==================== -->
+
+<div id="screen-sahad-health-qa" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-health')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-red-700">سؤال وجواب - الصحة</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-5">
+            <h3 class="font-black text-gray-800 mb-3 flex items-center gap-2">
+                <i class="fas fa-paper-plane text-red-500"></i> أرسل سؤالك
+            </h3>
+            <textarea id="sahad-health-qa-input" class="input-box h-24 text-sm mb-3" placeholder="اكتب سؤالك الطبي هنا..." maxlength="500"></textarea>
+            <button onclick="submitSahadQA('health')" class="w-full bg-gradient-to-r from-red-500 to-pink-600 text-white font-black py-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i> إرسال السؤال
+            </button>
+        </div>
+
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="font-black text-gray-800 text-sm">أسئلتي والأجوبة</h3>
+            <button onclick="loadSahadQA('health')" class="text-xs text-indigo-500 font-bold"><i class="fas fa-sync-alt"></i> تحديث</button>
+        </div>
+
+        <div id="sahad-health-qa-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== معلومات عامة - الصحة ==================== -->
+
+<div id="screen-sahad-health-info" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-health')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-blue-700">معلومات عامة - الصحة</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div id="sahad-health-info-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== فرص عمل - الصحة ==================== -->
+
+<div id="screen-sahad-health-jobs" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-health')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-emerald-700">فرص عمل - الصحة</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div id="sahad-health-jobs-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== أخبار وزارة الصحة ==================== -->
+
+<div id="screen-sahad-health-news" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-health')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-orange-700">أخبار وزارة الصحة</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div id="sahad-health-news-list" class="space-y-4 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== نصائح - التعليم ==================== -->
+
+<div id="screen-sahad-edu-tips" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-education')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-amber-700">نصائح - التعليم</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div id="sahad-edu-tips-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== دراسة (سؤال وجواب) - التعليم ==================== -->
+
+<div id="screen-sahad-edu-qa" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-education')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-indigo-700">دراسة - سؤال وجواب</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-5">
+            <h3 class="font-black text-gray-800 mb-3 flex items-center gap-2">
+                <i class="fas fa-paper-plane text-indigo-500"></i> أرسل سؤالك الدراسي
+            </h3>
+            <textarea id="sahad-edu-qa-input" class="input-box h-24 text-sm mb-3" placeholder="اكتب سؤالك الدراسي هنا..." maxlength="500"></textarea>
+            <button onclick="submitSahadQA('education')" class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-black py-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i> إرسال السؤال
+            </button>
+        </div>
+
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="font-black text-gray-800 text-sm">أسئلتي والأجوبة</h3>
+            <button onclick="loadSahadQA('education')" class="text-xs text-indigo-500 font-bold"><i class="fas fa-sync-alt"></i> تحديث</button>
+        </div>
+
+        <div id="sahad-edu-qa-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== فرص عمل - التعليم ==================== -->
+
+<div id="screen-sahad-edu-jobs" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-education')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-emerald-700">فرص عمل - التعليم</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div id="sahad-edu-jobs-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== أخبار وزارة التربية ==================== -->
+
+<div id="screen-sahad-edu-news" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-sahad-education')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-black text-lg text-orange-700">أخبار وزارة التربية</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div id="sahad-edu-news-list" class="space-y-4 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== إضافات ساعد - الرئيسية ==================== -->
+
+<div id="screen-admin-sahad-additions" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-admin-hub')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-bold text-lg text-gray-800">إضافات ساعد</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="grid grid-cols-2 gap-3">
+            <button onclick="openPage('screen-admin-sahad-qa-reply')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50">
+                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+                    <i class="fas fa-reply-all text-xl"></i>
+                </div>
+                <span class="font-bold text-xs text-gray-700 text-center">استقبال الأسئلة والأجوبة</span>
+            </button>
+            <button onclick="openPage('screen-admin-sahad-info')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                    <i class="fas fa-info-circle text-xl"></i>
+                </div>
+                <span class="font-bold text-xs text-gray-700 text-center">إرسال معلومة / نصيحة</span>
+            </button>
+            <button onclick="openPage('screen-admin-sahad-jobs')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50">
+                <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                    <i class="fas fa-briefcase text-xl"></i>
+                </div>
+                <span class="font-bold text-xs text-gray-700 text-center">إضافة فرصة عمل</span>
+            </button>
+            <button onclick="openPage('screen-admin-sahad-posts')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50">
+                <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600">
+                    <i class="fas fa-bullhorn text-xl"></i>
+                </div>
+                <span class="font-bold text-xs text-gray-700 text-center">إرسال منشور</span>
+            </button>
+            <button onclick="openPage('screen-admin-sahad-general-news')" class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2 hover:bg-gray-50 col-span-2">
+                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                    <i class="fas fa-globe text-xl"></i>
+                </div>
+                <span class="font-bold text-xs text-gray-700 text-center">نشر أخبار عامة</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== استقبال الأسئلة والأجوبة ==================== -->
+
+<div id="screen-admin-sahad-qa-reply" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-admin-sahad-additions')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-bold text-lg text-gray-800">استقبال الأسئلة والأجوبة</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="flex bg-gray-200/50 p-1 rounded-2xl mb-4">
+            <button id="admin-qa-tab-health" onclick="switchAdminQATab('health')" class="flex-1 py-2.5 rounded-xl font-black text-xs bg-white text-red-600 shadow-sm transition-all">
+                <i class="fas fa-heartbeat"></i> أسئلة الصحة
+            </button>
+            <button id="admin-qa-tab-education" onclick="switchAdminQATab('education')" class="flex-1 py-2.5 rounded-xl font-black text-xs text-gray-500 transition-all">
+                <i class="fas fa-graduation-cap"></i> أسئلة التعليم
+            </button>
+        </div>
+
+        <div id="admin-qa-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== إرسال معلومة / نصيحة ==================== -->
+
+<div id="screen-admin-sahad-info" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-admin-sahad-additions')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-bold text-lg text-gray-800">إرسال معلومة / نصيحة</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="flex bg-gray-200/50 p-1 rounded-2xl mb-4">
+            <button id="admin-info-tab-health" onclick="switchAdminInfoTab('health')" class="flex-1 py-2.5 rounded-xl font-black text-xs bg-white text-red-600 shadow-sm transition-all">
+                <i class="fas fa-info-circle"></i> معلومة صحية
+            </button>
+            <button id="admin-info-tab-education" onclick="switchAdminInfoTab('education')" class="flex-1 py-2.5 rounded-xl font-black text-xs text-gray-500 transition-all">
+                <i class="fas fa-lightbulb"></i> نصيحة تعليمية
+            </button>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-5">
+            <textarea id="admin-info-input" class="input-box h-28 text-sm mb-3" placeholder="اكتب المعلومة / النصيحة هنا..." maxlength="1000"></textarea>
+            <button onclick="publishSahadInfo()" class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-black py-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i> نشر
+            </button>
+        </div>
+
+        <h3 class="font-black text-gray-800 text-sm mb-3">المنشورات الحالية</h3>
+        <div id="admin-info-list" class="space-y-2 pb-20"></div>
+    </div>
+</div>
+
+<!-- ==================== إضافة فرصة عمل ==================== -->
+
+<div id="screen-admin-sahad-jobs" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-admin-sahad-additions')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-bold text-lg text-gray-800">إضافة فرصة عمل</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-5 space-y-3">
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">القسم</label>
+                <select id="admin-job-section" class="input-box text-sm">
+                    <option value="health">الصحة</option>
+                    <option value="education">التعليم</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">اسم المكان / الشركة</label>
+                <input type="text" id="admin-job-place" class="input-box text-sm" placeholder="مثال: مستشفى الكفيل" maxlength="80">
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">عنوان الفرصة</label>
+                <input type="text" id="admin-job-title" class="input-box text-sm" placeholder="مثال: مطلوب ممرضين" maxlength="100">
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">التفاصيل</label>
+                <textarea id="admin-job-details" class="input-box h-24 text-sm" placeholder="تفاصيل العمل..." maxlength="1000"></textarea>
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">الشروط</label>
+                <textarea id="admin-job-conditions" class="input-box h-20 text-sm" placeholder="الشروط المطلوبة..." maxlength="500"></textarea>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 mb-1">الراتب</label>
+                    <input type="text" id="admin-job-salary" class="input-box text-sm" placeholder="مثال: 500,000 د.ع" maxlength="50">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 mb-1">رقم الهاتف</label>
+                    <input type="tel" id="admin-job-phone" class="input-box text-sm" placeholder="07xxxxxxxxx" maxlength="20">
+                </div>
+            </div>
+            <button onclick="publishSahadJob()" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-black py-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i> نشر الفرصة
+            </button>
+        </div>
+
+        <h3 class="font-black text-gray-800 text-sm mb-3">الفرص الحالية</h3>
+        <div id="admin-jobs-list" class="space-y-2 pb-20"></div>
+    </div>
+</div>
+
+<!-- ==================== إرسال منشور ==================== -->
+
+<div id="screen-admin-sahad-posts" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-admin-sahad-additions')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-bold text-lg text-gray-800">إرسال منشور</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-5 space-y-3">
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">القسم</label>
+                <select id="admin-post-section" class="input-box text-sm">
+                    <option value="health">الصحة (أخبار وزارة الصحة)</option>
+                    <option value="education">التعليم (أخبار وزارة التربية)</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">عنوان المنشور</label>
+                <input type="text" id="admin-post-title" class="input-box text-sm" placeholder="عنوان المنشور" maxlength="120">
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">تفاصيل المنشور</label>
+                <textarea id="admin-post-body" class="input-box h-32 text-sm" placeholder="اكتب تفاصيل المنشور هنا..." maxlength="2000"></textarea>
+            </div>
+            <button onclick="publishSahadPost()" class="w-full bg-gradient-to-r from-orange-500 to-amber-600 text-white font-black py-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i> نشر المنشور
+            </button>
+        </div>
+
+        <h3 class="font-black text-gray-800 text-sm mb-3">المنشورات الحالية</h3>
+        <div id="admin-posts-list" class="space-y-2 pb-20"></div>
+    </div>
+</div>
+
+<!-- ==================== نشر أخبار عامة ==================== -->
+
+<div id="screen-admin-sahad-general-news" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-admin-sahad-additions')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-bold text-lg text-gray-800">نشر أخبار عامة</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-5 space-y-3">
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">عنوان الخبر</label>
+                <input type="text" id="admin-general-news-title" class="input-box text-sm" placeholder="عنوان الخبر" maxlength="120">
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-gray-500 mb-1">تفاصيل الخبر</label>
+                <textarea id="admin-general-news-body" class="input-box h-32 text-sm" placeholder="اكتب تفاصيل الخبر..." maxlength="2000"></textarea>
+            </div>
+            <button onclick="publishSahadGeneralNews()" class="w-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-black py-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i> نشر الخبر
+            </button>
+        </div>
+
+        <h3 class="font-black text-gray-800 text-sm mb-3">الأخبار الحالية</h3>
+        <div id="admin-general-news-list" class="space-y-2 pb-20"></div>
+    </div>
+</div>
+
+
+<!-- ==================== إضافة مشرف ==================== -->
+
+<div id="screen-admin-add-moderator" class="screen pt-20">
+    <div class="absolute top-0 w-full h-20 bg-white shadow-sm z-30 flex items-center px-5 gap-4">
+        <button onclick="openPage('screen-admin-hub')" class="text-gray-500"><i class="fas fa-arrow-right text-xl"></i></button>
+        <h1 class="font-bold text-lg text-gray-800">إضافة مشرف</h1>
+    </div>
+    <div class="scroll-container px-5 py-6">
+
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-5">
+            <h3 class="font-black text-gray-800 mb-3 flex items-center gap-2">
+                <i class="fas fa-user-plus text-indigo-600"></i> إضافة مشرف جديد
+            </h3>
+            <div class="flex gap-2 mb-3">
+                <input type="email" id="moderator-email-input" placeholder="البريد الإلكتروني للمشرف" class="input-box text-sm text-left" dir="ltr">
+                <button onclick="searchUserForModerator()" class="btn-main w-auto px-5"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="moderator-search-result" class="hidden"></div>
+        </div>
+
+        <h3 class="font-black text-gray-800 text-sm mb-3">المشرفون الحاليون</h3>
+        <div id="moderators-list" class="space-y-3 pb-20">
+            <p class="text-center text-gray-400 py-8">جاري التحميل...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== نافذة تعديل صلاحيات مشرف ==================== -->
+
+<div id="moderator-permissions-modal" class="modal-overlay hidden" style="z-index: 99999;">
+    <div class="modal-content relative bg-white p-6 rounded-3xl max-w-md w-full mx-4 shadow-2xl" style="max-height: 90vh; overflow-y: auto;">
+        <button onclick="document.getElementById('moderator-permissions-modal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+
+        <div class="text-center mb-5">
+            <img id="mod-perm-img" src="" class="w-16 h-16 rounded-full mx-auto mb-2 border-4 border-indigo-50 shadow">
+            <h3 id="mod-perm-name" class="font-black text-lg text-gray-800">...</h3>
+            <p id="mod-perm-email" class="text-xs text-gray-500" dir="ltr"></p>
+        </div>
+
+        <h4 class="font-black text-gray-700 text-sm mb-3 border-b pb-2">الصلاحيات المسموحة</h4>
+
+        <div id="mod-permissions-list" class="space-y-2 mb-5">
+            <!-- تُملأ بالديناميكي -->
+        </div>
+
+        <div class="flex gap-2">
+            <button onclick="removeModeratorRole()" class="flex-1 bg-red-50 text-red-600 py-3 rounded-xl font-bold border border-red-100 hover:bg-red-100 transition">
+                <i class="fas fa-trash"></i> حذف المشرف
+            </button>
+            <button onclick="saveModeratorPermissions()" class="flex-1 bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 rounded-xl font-bold shadow-md active:scale-95 transition">
+                <i class="fas fa-save"></i> حفظ
+            </button>
+        </div>
+    </div>
+</div>
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
@@ -2106,7 +2701,7 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 const ADMIN_EMAIL = "mslmalmyaly223@gmail.com";
-const CURRENT_APP_VERSION = 49;
+const CURRENT_APP_VERSION = 50;
 
 async function checkForUpdates() {
     try {
@@ -2289,8 +2884,9 @@ onAuthStateChanged(auth, async (user) => {
                     return;
                 }
                 setupProfileUI();
-                setupHeaderUI();
-                setupAdminUI();
+setupHeaderUI();
+setupAdminUI();
+if (window.applyAdminPermissionsUI) window.applyAdminPermissionsUI();
                 if (userData.grade) {
                     document.getElementById('grade-selector-card').classList.add('hidden');
                     document.getElementById('challenge-active-card').classList.remove('hidden');
@@ -2308,7 +2904,7 @@ onAuthStateChanged(auth, async (user) => {
                 intro.classList.add('hidden');
                 authScreen.classList.add('hidden');
                 mainApp.classList.remove('hidden');
-                if(!document.querySelector('.screen.active')) switchTab('challenges');
+                if(!document.querySelector('.screen.active')) switchTab('sahad');
                 showBeautifulAlert('info', 'وضع الأوفلاين 📴', 'أنت تلعب الآن بدون إنترنت. التحديات ستكون للتدريب فقط ولن يتم احتساب أي نقاط.');
                 return; 
             }
@@ -2339,6 +2935,18 @@ onAuthStateChanged(auth, async (user) => {
                     lastLogin: new Date().toISOString()
                 });
                 
+                try {
+                    const govSettingSnap = await getDoc(doc(db, "system_settings", "winning_gov"));
+                    if (govSettingSnap.exists()) {
+                        const govSettingData = govSettingSnap.data();
+                        localStorage.setItem('last_winning_gov', JSON.stringify({
+                            name: govSettingData.name,
+                            expiry: govSettingData.expiry,
+                            weekId: govSettingData.weekId || ''
+                        }));
+                    }
+                } catch(e) {}
+
                 await checkAndApplyIndividualReset(user.uid, userData);
                 setupProfileUI();
                 setupHeaderUI();
@@ -2379,7 +2987,7 @@ onAuthStateChanged(auth, async (user) => {
                 authScreen.classList.add('hidden');
                 mainApp.classList.remove('hidden');
                 
-                if(!document.querySelector('.screen.active')) switchTab('challenges');
+                if(!document.querySelector('.screen.active')) switchTab('sahad');
                 startWeeklyCountdown();
                 
                 if(typeof window.checkAndShowGlobalAd === 'function') {
@@ -2477,30 +3085,31 @@ async function compressImage(file) {
 }
 
 function startWeeklyCountdown() {
-    if(countdownInterval) clearInterval(countdownInterval);
+    if (countdownInterval) clearInterval(countdownInterval);
     const timerEl = document.getElementById('weekly-timer');
     
     function updateTimer() {
         const now = getIraqDate();
-        let nextFriday = getIraqDate();
-        nextFriday.setHours(0, 0, 0, 0);
-        
-        let day = nextFriday.getDay();
+        let target = getIraqDate();
+        const day = now.getDay();
         let daysUntilFriday = (5 - day + 7) % 7;
-        
-        if (daysUntilFriday === 0 && (now.getHours() > 0 || now.getMinutes() > 0 || now.getSeconds() > 0)) {
+        if (daysUntilFriday === 0) {
             daysUntilFriday = 7;
         }
+        target.setDate(target.getDate() + daysUntilFriday);
+        target.setHours(0, 0, 0, 0);
         
-        nextFriday.setDate(nextFriday.getDate() + daysUntilFriday);
-        
-        const diff = nextFriday.getTime() - now.getTime();
+        const diff = target.getTime() - now.getTime();
+        if (diff <= 0) {
+            if (timerEl) timerEl.innerText = "00:00:00:00";
+            return;
+        }
         const d = Math.floor(diff / (1000 * 60 * 60 * 24));
         const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const s = Math.floor((diff % (1000 * 60)) / 1000);
         
-        if(timerEl) timerEl.innerText = `${d}:${h<10?'0'+h:h}:${m<10?'0'+m:m}:${s<10?'0'+s:s}`;
+        if (timerEl) timerEl.innerText = `${d}:${h < 10 ? '0' + h : h}:${m < 10 ? '0' + m : m}:${s < 10 ? '0' + s : s}`;
     }
     
     updateTimer();
@@ -2586,9 +3195,23 @@ window.forceLeaderboardRefresh = function() {
 
 async function checkAndApplyIndividualReset(uid, uData) {
     const currentWeek = getCurrentWeekId();
-    if (uData.lastWeekId === currentWeek) return; 
+    if (uData.lastWeekId === currentWeek) return;
 
-    const previousWeek = uData.lastWeekId || getPreviousWeekId();
+    if (!uData.lastWeekId) {
+        try {
+            await updateDoc(doc(db, "users", uid), {
+                lastWeekId: currentWeek,
+                points: 0
+            });
+            userData.lastWeekId = currentWeek;
+            userData.points = 0;
+        } catch (e) {}
+        return;
+    }
+
+    const previousWeek = getPreviousWeekId();
+    const didParticipateInLastWeek = (uData.lastWeekId === previousWeek);
+
     const snapshotRef = doc(db, "weekly_snapshots", previousWeek);
 
     let snapshotData = {};
@@ -2596,8 +3219,8 @@ async function checkAndApplyIndividualReset(uid, uData) {
     let winningGovName = null;
 
     let updates = {
-        points: 0, 
-        lastWeekId: currentWeek 
+        points: 0,
+        lastWeekId: currentWeek
     };
 
     try {
@@ -2614,37 +3237,43 @@ async function checkAndApplyIndividualReset(uid, uData) {
             let govsList = [];
             govsSnap.forEach(d => govsList.push({ name: d.id, points: d.data().totalPoints || 0 }));
             govsList.sort((a, b) => b.points - a.points);
-            
+
             let winner = null;
             if (govsList.length > 0 && govsList[0].points > 0) {
                 winner = govsList[0].name;
             }
 
+            const expiryDate = Date.now() + (7 * 24 * 60 * 60 * 1000);
             const snapPayload = {
                 createdAt: serverTimestamp(),
                 leaderboard: topUsersData,
                 governorates: govsList,
                 winningGov: winner,
+                expiry: expiryDate,
                 createdBy: uid
             };
 
             await setDoc(snapshotRef, snapPayload);
-            
+
             snapshotData = topUsersData;
             govsSnapshotData = govsList;
             winningGovName = winner;
 
             const globalBatch = writeBatch(db);
-            const expiryDate = Date.now() + (7 * 24 * 60 * 60 * 1000);
-            
+
             if (winningGovName) {
                 globalBatch.set(doc(db, "system_settings", "winning_gov"), {
                     name: winningGovName,
                     expiry: expiryDate,
                     weekId: currentWeek
                 });
+                localStorage.setItem('last_winning_gov', JSON.stringify({
+                    name: winningGovName,
+                    expiry: expiryDate,
+                    weekId: currentWeek
+                }));
             }
-            
+
             if (govsSnapshotData) {
                 govsSnapshotData.forEach(g => {
                     globalBatch.set(doc(db, "governorates", g.name), { totalPoints: 0 }, { merge: true });
@@ -2656,127 +3285,134 @@ async function checkAndApplyIndividualReset(uid, uData) {
             snapshotData = data.leaderboard || {};
             govsSnapshotData = data.governorates || [];
             winningGovName = data.winningGov || null;
-        }
 
-        let myRankInfo = snapshotData[uid];
-        let rewardMsg = "";
-
-        if (myRankInfo && myRankInfo.rank > 0) {
-            const finalRank = myRankInfo.rank;
-            if (!uData.bestRank || finalRank < uData.bestRank) {
-                updates.bestRank = finalRank;
-                userData.bestRank = finalRank;
-            }
-            if (!uData.worstRank || finalRank > uData.worstRank) {
-                updates.worstRank = finalRank;
-                userData.worstRank = finalRank;
+            if (winningGovName) {
+                localStorage.setItem('last_winning_gov', JSON.stringify({
+                    name: winningGovName,
+                    expiry: data.expiry || (Date.now() + (7 * 24 * 60 * 60 * 1000)),
+                    weekId: currentWeek
+                }));
             }
         }
 
-        let myGovRank = 0;
-        let myGovPoints = 0;
-        let isMyGovWinner = false;
+        if (didParticipateInLastWeek) {
+            let myRankInfo = snapshotData[uid];
+            let myGovRank = 0;
 
-        if (uData.governorate && govsSnapshotData && govsSnapshotData.length > 0) {
-            const gIndex = govsSnapshotData.findIndex(g => g.name === uData.governorate);
-            if (gIndex !== -1) {
-                myGovRank = gIndex + 1;
-                myGovPoints = govsSnapshotData[gIndex].points;
-                if (myGovRank === 1 && winningGovName === uData.governorate) {
-                    isMyGovWinner = true;
+            if (uData.governorate && govsSnapshotData && govsSnapshotData.length > 0) {
+                const gIndex = govsSnapshotData.findIndex(g => g.name === uData.governorate);
+                if (gIndex !== -1) myGovRank = gIndex + 1;
+            }
+
+            let finalRank = 999;
+            if (myRankInfo && myRankInfo.rank > 0) {
+                finalRank = myRankInfo.rank;
+            } else if ((uData.points || 0) > 0) {
+                const rankSnap = await getCountFromServer(query(collection(db, "users"), where("points", ">", uData.points)));
+                finalRank = rankSnap.data().count + 1;
+            }
+
+            if (finalRank !== 999 && finalRank > 0) {
+                if (!uData.bestRank || finalRank < uData.bestRank) {
+                    updates.bestRank = finalRank;
+                    userData.bestRank = finalRank;
                 }
+                if (!uData.worstRank || finalRank > uData.worstRank) {
+                    updates.worstRank = finalRank;
+                    userData.worstRank = finalRank;
+                }
+
+                                let prizeMoney = 0;
+                let leveledUp = false;
+
+                if (finalRank === 1) {
+                    updates.level = increment(1);
+                    leveledUp = true;
+                }
+
+                if (finalRank <= 10 && (uData.points || 0) > 150) {
+                    if (finalRank === 1) prizeMoney = 10;
+                    else if (finalRank === 2) prizeMoney = 7;
+                    else if (finalRank === 3) prizeMoney = 5;
+                    else if (finalRank === 4) prizeMoney = 3;
+                    else if (finalRank === 5) prizeMoney = 2;
+                    else if (finalRank <= 10) prizeMoney = 1;
+                }
+
+                let moneyApplied = 0;
+                if (prizeMoney > 0) {
+                    updates.balance = increment(prizeMoney);
+                    moneyApplied = prizeMoney;
+                }
+
+                let prizeText = "لا توجد جائزة";
+                if (moneyApplied > 0 && leveledUp) prizeText = `${moneyApplied}$ + ترقية مستوى`;
+                else if (moneyApplied > 0) prizeText = `${moneyApplied}$`;
+                else if (leveledUp) prizeText = `ترقية مستوى`;
+
+                let govRankStr = myGovRank > 0 ? myGovRank : '-';
+                let rewardMsg = "";
+
+                if (finalRank <= 25) {
+                    rewardMsg = `انتهى الاسبوع وتم تصفير النقاط وتوزيع الجوائز 🏆\nلقد انهيت الاسبوع في المركز #${finalRank}\nوانهت محافظتك الاسبوع في المركز #${govRankStr}\nوحصلت على الجائزة: ${prizeText}`;
+                } else {
+                    rewardMsg = `انتهى الاسبوع وتم تصفير النقاط 🚀\nلقد انهيت الاسبوع في المركز #${finalRank}\nوانهت محافظتك الاسبوع في المركز #${govRankStr}\nالفرصة أمامك الآن للتعويض!`;
+                }
+
+                addDoc(collection(db, "notifications"), {
+                    userId: uid,
+                    type: 'weekly',
+                    message: rewardMsg,
+                    read: false,
+                    createdAt: serverTimestamp()
+                });
             }
         }
-
-        let govMsgText = "";
-        if (!uData.governorate) {
-            govMsgText = "🚩 لم تقم باختيار محافظة لتمثيلها.";
-        } else if (isMyGovWinner) {
-            govMsgText = `🏆 مبروك! محافظتك (${uData.governorate}) اكتسحت المركز الأول برصيد ${myGovPoints} نقطة، وحصلت على شعار البطل الملكي لمدة أسبوع كامل! 👑`;
-        } else if (myGovRank > 0) {
-            govMsgText = `🚩 محافظتك (${uData.governorate}) أنهت الأسبوع بالمركز #${myGovRank} برصيد ${myGovPoints} نقطة.`;
-        }
-
-        let hasPoints = myRankInfo ? myRankInfo.points > 0 : uData.points > 0;
-        
-if (hasPoints) {
-    const rank = myRankInfo ? myRankInfo.rank : 999;
-    const finalPoints = myRankInfo ? myRankInfo.points : uData.points;
-    let prizeMoney = 0;
-    let leveledUp = false;
-
-    if (rank === 1) {
-        updates.level = increment(1);
-        leveledUp = true;
-    }
-
-    if (rank <= 10 && finalPoints >= 150) {
-        if (rank === 1) prizeMoney = 10;
-        else if (rank === 2) prizeMoney = 7;
-        else if (rank === 3) prizeMoney = 5;
-        else if (rank === 4) prizeMoney = 3;
-        else if (rank === 5) prizeMoney = 2;
-        else if (rank <= 10) prizeMoney = 1;
-    }
-
-    if (prizeMoney > 0) {
-        updates.balance = increment(prizeMoney);
-    }
-
-    let prizeText = "لا توجد جائزة";
-    if (prizeMoney > 0 && leveledUp) prizeText = `${prizeMoney}$ + ترقية مستوى ⭐`;
-    else if (prizeMoney > 0) prizeText = `${prizeMoney}$ 💵`;
-    else if (leveledUp) prizeText = `ترقية مستوى ⭐`;
-
-    let rewardMsg = "";
-    if (rank <= 25) {
-        rewardMsg = `انتهى الاسبوع وتم تصفير النقاط وتوزيع الجوائز 🏆\nلقد انهيت الاسبوع في المركز #${rank}\nوانهت محافظتك الاسبوع في المركز #${myGovRank > 0 ? myGovRank : 'غير محدد'}\nوحصلت على الجائزة: ${prizeText}`;
-    } else {
-        rewardMsg = `انتهى الاسبوع وتم تصفير النقاط 🚀\nلقد انهيت الاسبوع في المركز #${rank > 50 ? '+50' : rank}\nوانهت محافظتك الاسبوع في المركز #${myGovRank > 0 ? myGovRank : 'غير محدد'}\nالفرصة أمامك الآن للتعويض!`;
-    }
-
-    addDoc(collection(db, "notifications"), {
-        userId: uid, type: 'weekly',
-        message: rewardMsg,
-        read: false, createdAt: serverTimestamp()
-    });
-}
     } catch (error) {
         console.error(error);
     }
 
-    try {
+        try {
+        updates.lastWeekId = currentWeek;
         await updateDoc(doc(db, "users", uid), updates);
         userData.points = 0;
         userData.lastWeekId = currentWeek;
-        if (updates.balance) userData.balance = (userData.balance || 0) + updates.balance.operand;
-        if (updates.level) userData.level = (userData.level || 1) + 1; 
+        if (updates.balance) userData.balance = (userData.balance || 0) + (updates.balance.operand || 0);
+        if (updates.level) userData.level = (userData.level || 1) + 1;
         setupHeaderUI();
-        setupProfileUI(); 
+        setupProfileUI();
     } catch (error) {
         console.error(error);
+        setTimeout(() => {
+            if (window.checkAndApplyIndividualReset) {
+                window.checkAndApplyIndividualReset(uid, uData);
+            }
+        }, 10000);
     }
 }
         
 function getCurrentWeekId() {
     const d = getIraqDate();
     d.setHours(0, 0, 0, 0);
-    let day = d.getDay();
-    if (day !== 5) {
-        d.setDate(d.getDate() - ((day + 2) % 7));
-    }
-    return `week_${d.getFullYear()}_${d.getMonth()}_${d.getDate()}`;
+    const day = d.getDay();
+    const diff = (day >= 5) ? (day - 5) : (day + 2);
+    d.setDate(d.getDate() - diff);
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    return `week_${yyyy}_${mm}_${dd}`;
 }
 
 function getPreviousWeekId() {
     const d = getIraqDate();
     d.setHours(0, 0, 0, 0);
-    let day = d.getDay();
-    if (day !== 5) {
-        d.setDate(d.getDate() - ((day + 2) % 7));
-    }
-    d.setDate(d.getDate() - 7);
-    return `week_${d.getFullYear()}_${d.getMonth()}_${d.getDate()}`;
+    const day = d.getDay();
+    const diff = (day >= 5) ? (day - 5) : (day + 2);
+    d.setDate(d.getDate() - diff - 7);
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    return `week_${yyyy}_${mm}_${dd}`;
 }
 
 function showBeautifulAlert(type, title, message) {
@@ -3026,6 +3662,7 @@ window.handleSignup = async () => {
                 uniqueId: generateId(),
                 points: 0,
                 balance: 0,
+                level: 1,
                 role: 'user',
                 isBanned: false,
                 bio: "",
@@ -3034,6 +3671,7 @@ window.handleSignup = async () => {
                 lastRewardDayKey: null, 
                 rewardWeekKey: null,
                 daysClaimedInWeek: 0,
+                lastWeekId: getCurrentWeekId(),
                 lastLogin: new Date().toISOString(),
                 dailyAIRemaining: 10,
                 lastAIReset: new Date().toISOString().split('T')[0]
@@ -3088,7 +3726,9 @@ window.logout = async () => {
 };
 
 function getIraqDate() {
-    return new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Baghdad" }));
+    const now = new Date();
+    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+    return new Date(utc + (3600000 * 3));
 }
 
 const GLOBAL_DAILY_REWARDS = [
@@ -3188,6 +3828,9 @@ window.claimReward = async () => {
         userData.balance += moneyAmount;
         userData.lastRewardDayKey = currentDayKey;
         
+        if (rewardAmount > 0 && userData.governorate) {
+            await window.updateGovPoints(userData.governorate, rewardAmount);
+        }
         setupHeaderUI();
         showBeautifulAlert('success', 'هدية اليوم', rewardMessage);
         document.getElementById('daily-reward-screen').classList.add('hidden');
@@ -3221,27 +3864,29 @@ let notificationListenerUnsubscribe = null;
 async function checkNotifications() {
     if (!currentUser) return;
     try {
-        const q = query(
-            collection(db, "notifications"), 
-            where("userId", "==", currentUser.uid),
-            where("read", "==", false),
-            limit(1) 
-        );
-
+        const q = query(collection(db, "notifications"), where("userId", "==", currentUser.uid));
         const snap = await getDocs(q);
+        
+        let hasUnread = false;
+        snap.forEach(doc => {
+            if (doc.data().read === false) {
+                hasUnread = true;
+            }
+        });
+
         const notificationBtn = document.getElementById('notification-header-btn');
         const notificationDot = document.getElementById('notification-header-dot');
         
-        if (!snap.empty) {
-            notificationBtn.classList.remove('hidden');
-            notificationDot.classList.add('visible');
-        } else {
-            notificationBtn.classList.remove('hidden');
-            notificationDot.classList.remove('visible');
+        if (notificationBtn) notificationBtn.classList.remove('hidden');
+        if (notificationDot) {
+            if (hasUnread) notificationDot.classList.add('visible');
+            else notificationDot.classList.remove('visible');
         }
         
-        if (document.getElementById('tab-profile').classList.contains('active')) {
-            document.getElementById('profile-tab-badge').classList.toggle('visible', !snap.empty);
+        const profileBadge = document.getElementById('profile-tab-badge');
+        if (profileBadge) {
+            if (hasUnread) profileBadge.classList.add('visible');
+            else profileBadge.classList.remove('visible');
         }
     } catch (error) {
         console.error("Error fetching notifications:", error);
@@ -3260,33 +3905,35 @@ async function loadNotifications() {
         
         const snap = await getDocs(q);
         let userNotifications = [];
-        const now = getIraqDate().getTime();
+        let autoDeleteDocs = [];
+        let markReadDocs = [];
         
         snap.docs.forEach(docSnapshot => {
             const data = docSnapshot.data();
-            const notifDate = data.createdAt ? data.createdAt.toDate().getTime() : 0;
-            const hoursDiff = (now - notifDate) / (1000 * 60 * 60);
+            userNotifications.push({ id: docSnapshot.id, ...data });
 
-            if (data.type === 'revenge') {
-                const readDate = data.readAt ? data.readAt.toDate().getTime() : 0;
-                const minutesSinceRead = (now - readDate) / (1000 * 60);
-                if (data.read && readDate > 0 && minutesSinceRead >= 10) {
-                    try { deleteDoc(doc(db, "notifications", docSnapshot.id)); } catch(e) { }
-                } else {
-                    userNotifications.push({ id: docSnapshot.id, ...data });
-                }
+            if (data.type === 'reward' || data.type === 'weekly' || data.read === true) {
+                autoDeleteDocs.push(docSnapshot.ref);
             } else {
-                if (data.read && hoursDiff >= 24) {
-                    try { deleteDoc(doc(db, "notifications", docSnapshot.id)); } catch(e) { }
-                } else {
-                    userNotifications.push({ id: docSnapshot.id, ...data });
-                }
+                markReadDocs.push(docSnapshot.ref);
             }
         });
+
+        if (autoDeleteDocs.length > 0 || markReadDocs.length > 0) {
+            const batch = writeBatch(db);
+            autoDeleteDocs.forEach(ref => batch.delete(ref));
+            markReadDocs.forEach(ref => batch.update(ref, { read: true, readAt: serverTimestamp() }));
+            batch.commit().catch(e => console.error(e));
+        }
+
+        const notificationDot = document.getElementById('notification-header-dot');
+        if (notificationDot) notificationDot.classList.remove('visible');
+        const profileBadge = document.getElementById('profile-tab-badge');
+        if (profileBadge) profileBadge.classList.remove('visible');
         
         userNotifications.sort((a, b) => {
-            const tA = a.createdAt ? a.createdAt.toDate().getTime() : 0;
-            const tB = b.createdAt ? b.createdAt.toDate().getTime() : 0;
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : a.createdAt) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : b.createdAt) : 0;
             return tB - tA;
         });
 
@@ -3306,7 +3953,7 @@ async function loadNotifications() {
         let html = '';
         userNotifications.forEach(notification => {
             const data = notification;
-            const timeAgo = getTimeAgo(data.createdAt?.toDate());
+            const timeAgo = getTimeAgo(data.createdAt?.toDate ? data.createdAt.toDate() : new Date(data.createdAt || Date.now()));
             let notificationClass = 'notification-item';
             let icon = 'fas fa-bell';
             let actionBtn = '';
@@ -3328,7 +3975,7 @@ async function loadNotifications() {
             }
             
             html += `
-                <div class="${notificationClass} ${data.read ? 'opacity-80' : ''}">
+                <div class="${notificationClass}">
                     <div class="notification-content">
                         <div class="notification-icon">
                             <i class="${icon}"></i>
@@ -3367,36 +4014,34 @@ window.markAllNotificationsAsRead = async function(showAlert = true) {
         const snap = await getDocs(q);
         
         if (snap.empty) {
-            if(showAlert) showBeautifulAlert('info', 'لا توجد إشعارات جديدة', 'جميع إشعاراتك مقروءة بالفعل');
+            if (showAlert) showBeautifulAlert('info', 'لا توجد إشعارات', 'صندوق إشعاراتك فارغ حالياً');
             return;
         }
 
         const batch = writeBatch(db);
         snap.forEach(doc => {
-            const data = doc.data();
-            if (data.type === 'revenge') {
-                batch.update(doc.ref, { read: true, readAt: serverTimestamp() });
-            } else {
-                batch.delete(doc.ref); 
-            }
+            batch.delete(doc.ref);
         });
         
         await batch.commit();
-        checkNotifications(); // سيقوم بإخفاء النقطة الحمراء
         
+        const notificationDot = document.getElementById('notification-header-dot');
+        if (notificationDot) notificationDot.classList.remove('visible');
+        const profileBadge = document.getElementById('profile-tab-badge');
+        if (profileBadge) profileBadge.classList.remove('visible');
+        
+        document.getElementById('notifications-list').innerHTML = `
+            <div class="empty-notifications">
+                <i class="far fa-bell-slash"></i>
+                <p class="text-lg font-medium text-gray-600 mb-2">لا توجد إشعارات</p>
+                <p class="text-sm text-gray-400">سيظهر هنا أي إشعارات جديدة تتلقاها</p>
+            </div>
+        `;
         if (showAlert) {
-            // تفريغ القائمة محلياً لتجنب استدعاء قراءات جديدة
-            document.getElementById('notifications-list').innerHTML = `
-                <div class="empty-notifications">
-                    <i class="far fa-bell-slash"></i>
-                    <p class="text-lg font-medium text-gray-600 mb-2">لا توجد إشعارات</p>
-                    <p class="text-sm text-gray-400">سيظهر هنا أي إشعارات جديدة تتلقاها</p>
-                </div>
-            `;
-            showBeautifulAlert('success', 'تم', 'تم قراءة وحذف جميع الإشعارات بنجاح لضمان سرعة التطبيق');
+            showBeautifulAlert('success', 'تم', 'تم حذف وتفريغ جميع الإشعارات بنجاح');
         }
     } catch (error) {
-        if(showAlert) showBeautifulAlert('error', 'خطأ', 'حدث خطأ أثناء تحديث الإشعارات');
+        if (showAlert) showBeautifulAlert('error', 'خطأ', 'حدث خطأ أثناء مسح الإشعارات');
     }
 };
 
@@ -3421,6 +4066,17 @@ function setupProfileUI() {
     const oldLvl = lvlContainer.querySelector('.user-level-tag');
     if(oldLvl) oldLvl.remove();
     lvlContainer.insertAdjacentHTML('beforeend', window.getLevelUI(userData.level));
+
+    const oldHero = lvlContainer.querySelector('.hero-gov-badge');
+    if (oldHero) oldHero.remove();
+    const heroBadge = getHeroBadge(userData);
+    if (heroBadge) {
+        const heroWrapper = document.createElement('span');
+        heroWrapper.className = 'hero-gov-badge';
+        heroWrapper.innerHTML = heroBadge;
+        lvlContainer.appendChild(heroWrapper);
+    }
+
     const idEl = document.getElementById('profile-id-text');
     idEl.innerText = "ID: " + userData.uniqueId;
     idEl.classList.add('cursor-pointer', 'hover:text-indigo-500', 'transition');
@@ -3483,10 +4139,16 @@ function setupProfileUI() {
 }
         
 function getHeroBadge(user) {
-    const winnerData = JSON.parse(localStorage.getItem('last_winning_gov') || '{}');
-    if (winnerData.name === user.governorate && Date.now() < winnerData.expiry) {
-        return `<span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[9px] px-2 py-0.5 rounded-full font-black shadow-sm mr-1 animate-pulse">👑 من أبطال محافظة ${user.governorate}</span>`;
-    }
+    if (!user || !user.governorate) return '';
+    try {
+        const winnerData = JSON.parse(localStorage.getItem('last_winning_gov') || '{}');
+        const targetGov = String(winnerData.name || '').trim();
+        const userGov = String(user.governorate || '').trim();
+        const expiryTime = Number(winnerData.expiry || 0);
+        if (targetGov && userGov === targetGov && Date.now() < expiryTime) {
+            return `<span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[9px] px-2 py-0.5 rounded-full font-black shadow-sm mr-1 animate-pulse">👑 من أبطال محافظة ${userGov}</span>`;
+        }
+    } catch (e) {}
     return '';
 }
         
@@ -3504,9 +4166,12 @@ function setupHeaderUI() {
 }
         
 function setupAdminUI() { 
-    if (userData.email === ADMIN_EMAIL) {
-        document.getElementById('admin-hub-btn-container').classList.remove('hidden'); 
-        loadBannedUsers();
+    if (!userData) return;
+    const isOwner = userData.email === ADMIN_EMAIL;
+    const isModerator = userData.role === 'moderator';
+    if (isOwner || isModerator) {
+        document.getElementById('admin-hub-btn-container').classList.remove('hidden');
+        if (isOwner) loadBannedUsers();
     }
 }
         
@@ -4152,6 +4817,9 @@ window.withdrawFromGame = async function(skipConfirm = false) {
             points: increment(penalty)
         });
         userData.points += penalty;
+        if (userData.governorate) {
+            await window.updateGovPoints(userData.governorate, penalty);
+        }
         setupHeaderUI();
         if (localMatchData && localMatchData.player2 && localMatchData.player2.uid !== 'AI_BOT') {
             try {
@@ -4316,21 +4984,21 @@ async function endGame(d) {
             }
             let myChange = 0;
             if (currentGameMode === 'student') {
-                let matchTypeTxt = window.isCurrentMatchFriendly ? "في مباراة ودية" : "في تحدي حقيقي";
+                let matchTypeTxt = window.isCurrentMatchFriendly ? "Friendly Match" : "Ranked Match";
                 if (!window.isCurrentMatchFriendly) {
                     if (myScore > opScore) {
                         updateDoc(doc(db, "users", opId), { points: increment(-pointsGained) });
+                        getDoc(doc(db, "users", opId)).then(opSnap => {
+                            if (opSnap.exists() && opSnap.data().governorate) {
+                                window.updateGovPoints(opSnap.data().governorate, -pointsGained);
+                            }
+                        });
                     } else if (myScore < opScore) {
                         let opAdd = opScore * 2;
+                        updateDoc(doc(db, "users", opId), { points: increment(opAdd) });
                         getDoc(doc(db, "users", opId)).then(opSnap => {
-                            if (opSnap.exists()) {
-                                let opData = opSnap.data();
-                                updateDoc(doc(db, "users", opId), { points: increment(opAdd) });
-                                if (opData.governorate) {
-                                    try {
-                                        updateDoc(doc(db, "governorates", opData.governorate), { totalPoints: increment(opAdd) });
-                                    } catch (e) {}
-                                }
+                            if (opSnap.exists() && opSnap.data().governorate) {
+                                window.updateGovPoints(opSnap.data().governorate, opAdd);
                             }
                         });
                     }
@@ -4378,10 +5046,8 @@ async function endGame(d) {
                 await updateDoc(doc(db, "users", currentUser.uid), dbUpdates);
                 userData.points += myChange;
                 setupHeaderUI();
-                if (pointsGained > 0 && userData.governorate) {
-                    try {
-                        updateDoc(doc(db, "governorates", userData.governorate), { totalPoints: increment(pointsGained) });
-                    } catch (e) {}
+                if (myChange !== 0 && userData.governorate) {
+                    await window.updateGovPoints(userData.governorate, myChange);
                 }
             }
             window.isCurrentMatchFriendly = false;
@@ -4552,7 +5218,7 @@ window.closeResultScreen = async () => {
          }
          loadLeaderboard();
      }
-     switchTab('challenges');
+          switchTab('challenges');
      setTimeout(() => { isExitingGame = false; }, 500);
 };
 
@@ -4768,49 +5434,69 @@ ${subjectInstructions}
     return finalQuestions;
 }
 
+if (typeof window.appNavigationHistory === 'undefined') {
+    window.appNavigationHistory = ['tab-sahad'];
+}
+
 window.openPage = async (screenId, skipHistory = false) => {
-    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    document.getElementById(screenId).classList.add('active');
-    
-    if (screenId === 'screen-admin-all') { 
-        populateAdminFilterSubjects(); 
-        loadAdminAllContent(); 
-    }
-    else if (screenId === 'screen-admin-stats') loadStatsContent();
-    else if (screenId === 'screen-wallet') setupProfileUI(); 
-    else if (screenId === 'screen-admin-users') {
-        loadBannedUsers();
-    }
-    else if (screenId === 'screen-review-questions') {
-        loadReviewQuestions();
-    }
-    else if (screenId === 'screen-notifications') {
-        loadNotifications();
-        markNotificationsAsRead();
-    }
-    else if (screenId === 'screen-admin-badges') {
-        loadAdminBadges();
-    }
-    else if (screenId === 'screen-admin-ai-extract') {
-        switchAITab('upload');
-        renderAIQueue();
-        startAIQueueProcessor(); 
-    }
-    else if (screenId === 'screen-hacker-store') {
-        document.getElementById('store-user-balance').innerText = `$${userData.balance || 0}`;
-        if(window.updateStoreButtons) window.updateStoreButtons(); 
-    }
+    try {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        const targetScreen = document.getElementById(screenId);
+        if (targetScreen) targetScreen.classList.add('active');
+        
+        if (screenId === 'screen-admin-all') { populateAdminFilterSubjects(); loadAdminAllContent(); }
+        else if (screenId === 'screen-admin-stats') loadStatsContent();
+        else if (screenId === 'screen-wallet') setupProfileUI(); 
+        else if (screenId === 'screen-admin-users') loadBannedUsers();
+        else if (screenId === 'screen-review-questions') loadReviewQuestions();
+        else if (screenId === 'screen-notifications') { loadNotifications(); }
+        else if (screenId === 'screen-admin-badges') loadAdminBadges();
+        else if (screenId === 'screen-admin-ai-extract') { switchAITab('upload'); renderAIQueue(); startAIQueueProcessor(); }
+        else if (screenId === 'screen-hacker-store') {
+            const balEl = document.getElementById('store-user-balance');
+            if(balEl) balEl.innerText = `$${userData.balance || 0}`;
+            if(window.updateStoreButtons) window.updateStoreButtons(); 
+        }
+        else if (screenId && screenId.startsWith('screen-sahad-')) {
+            if (window.loadSahadSubPage) window.loadSahadSubPage(screenId);
+        }
+        else if (screenId && screenId.startsWith('screen-admin-sahad-')) {
+            if (window.loadSahadSubPage) window.loadSahadSubPage(screenId);
+        }
 
-    if (screenId !== 'screen-admin-ai-extract' && typeof isQueueProcessing !== 'undefined') {
-        isQueueProcessing = false;
-    }
+        if (screenId !== 'screen-admin-ai-extract' && typeof isQueueProcessing !== 'undefined') {
+            isQueueProcessing = false;
+        }
 
-    if (!skipHistory) {
-        history.pushState({ screen: screenId, type: 'sub' }, '', '#' + screenId);
-    }
+        if (!skipHistory) {
+            if (window.appNavigationHistory[window.appNavigationHistory.length - 1] !== screenId) {
+                window.appNavigationHistory.push(screenId);
+            }
+        }
+    } catch(e) {}
 };
 
-window.backToProfile = () => { 
+window.backToProfile = async () => { 
+    const currentActiveScreen = document.querySelector('.screen.active');
+    if (currentActiveScreen && currentActiveScreen.id === 'screen-notifications' && currentUser) {
+        try {
+            const q = query(
+                collection(db, "notifications"),
+                where("userId", "==", currentUser.uid)
+            );
+            const snap = await getDocs(q);
+            if (!snap.empty) {
+                const batch = writeBatch(db);
+                snap.forEach(d => {
+                    const data = d.data();
+                    if (data.type === 'reward' || data.type === 'weekly' || data.read === true) {
+                        batch.delete(d.ref);
+                    }
+                });
+                await batch.commit();
+            }
+        } catch(e) {}
+    }
     switchTab('profile');
 };
 
@@ -5147,37 +5833,45 @@ async function checkAdminNotifications() {
 }
 
 window.switchTab = (tab, skipHistory = false) => {
-    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    const targetScreen = document.getElementById('tab-' + tab);
-    if(targetScreen) targetScreen.classList.add('active');
-    
-    const navs = document.querySelectorAll('.nav-item');
-    navs.forEach(n => { 
-        n.classList.remove('active', 'text-indigo-600'); 
-        n.classList.add('text-gray-400'); 
-    });
-    
-    if(tab === 'challenges') {
-        navs[0].classList.add('active', 'text-indigo-600');
-        if (window.checkAndUpdate7DayStreak) window.checkAndUpdate7DayStreak();
-    }
-    if(tab === 'leaderboard') {
-        navs[1].classList.add('active', 'text-indigo-600'); 
-        loadLeaderboard(); 
-    }
-    if(tab === 'news') { 
-        navs[2].classList.add('active', 'text-indigo-600'); 
-        loadStudentNews(); 
-    }
-    if(tab === 'profile') navs[3].classList.add('active', 'text-indigo-600');
+    try {
+        const screenId = 'tab-' + tab;
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        const targetScreen = document.getElementById(screenId);
+        if(targetScreen) targetScreen.classList.add('active');
+        
+        const navs = document.querySelectorAll('.nav-item');
+        navs.forEach(n => { n.classList.remove('active', 'text-indigo-600'); n.classList.add('text-gray-400'); });
+        
+        if(tab === 'sahad') {
+            if(navs[0]) navs[0].classList.add('active', 'text-indigo-600');
+            if (window.checkSahadQANotifications) window.checkSahadQANotifications();
+        }
+        else if(tab === 'challenges') {
+            if(navs[1]) navs[1].classList.add('active', 'text-indigo-600');
+            if (window.checkAndUpdate7DayStreak) window.checkAndUpdate7DayStreak();
+        }
+        else if(tab === 'leaderboard') {
+            if(navs[2]) navs[2].classList.add('active', 'text-indigo-600'); 
+            if(window.loadLeaderboard) window.loadLeaderboard(); 
+        }
+        else if(tab === 'news') { 
+            if(navs[3]) navs[3].classList.add('active', 'text-indigo-600'); 
+            if(window.loadStudentNews) window.loadStudentNews(); 
+        }
+        else if(tab === 'profile') {
+            if(navs[4]) navs[4].classList.add('active', 'text-indigo-600');
+        }
 
-    if (tab !== 'news' && typeof newsCarouselInterval !== 'undefined' && newsCarouselInterval) {
-        clearInterval(newsCarouselInterval);
-    }
+        if (tab !== 'news' && typeof newsCarouselInterval !== 'undefined' && newsCarouselInterval) {
+            clearInterval(newsCarouselInterval);
+        }
 
-    if (!skipHistory) {
-        history.pushState({ tab: tab, type: 'main' }, '', '#' + tab);
-    }
+        if (!skipHistory) {
+            if (window.appNavigationHistory[window.appNavigationHistory.length - 1] !== screenId) {
+                window.appNavigationHistory.push(screenId);
+            }
+        }
+    } catch(e) {}
 };
         
 window.loadLeaderboard = async function() {
@@ -5328,9 +6022,17 @@ function renderFromRAM(start, end) {
 }
 
 window.resetUserPoints = async (uid, name) => {
-    if(confirm(`هل أنت متأكد من تصفير نقاط الطالب: ${name}؟`)) {
-        await updateDoc(doc(db, "users", uid), { points: 0 });
-        showBeautifulAlert('success', 'تم التصفير', 'تم تصفير النقاط بنجاح!');
+    if(confirm(`Are you sure you want to reset points for: ${name}?`)) {
+        const userDoc = await getDoc(doc(db, "users", uid));
+        if (userDoc.exists()) {
+            const uData = userDoc.data();
+            const currentPts = uData.points || 0;
+            await updateDoc(doc(db, "users", uid), { points: 0 });
+            if (uData.governorate && currentPts !== 0) {
+                await window.updateGovPoints(uData.governorate, -currentPts);
+            }
+        }
+        showBeautifulAlert('success', 'Reset', 'Points reset successfully!');
         loadLeaderboard(); 
     }
 };
@@ -5713,8 +6415,8 @@ async function loadReviewQuestions() {
         
         html += `
             <div class="mt-4 text-center">
-                <button onclick="loadReviewQuestions()" class="bg-gray-100 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-gray-200 transition inline-flex items-center gap-2">
-                    <i class="fas fa-sync-alt"></i> تحديث القائمة
+                <button onclick="loadNotifications()" class="bg-gray-100 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-gray-200 transition inline-flex items-center gap-2">
+                    <i class="fas fa-sync-alt"></i> Update
                 </button>
             </div>
         `;
@@ -5725,7 +6427,6 @@ async function loadReviewQuestions() {
                 MathJax.typesetPromise([listDiv]).catch((err) => console.log(err));
             }, 50);
         }
-        
     } catch (error) {
         listDiv.innerHTML = `
             <div class="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
@@ -5753,6 +6454,11 @@ window.acceptQuestion = async function(questionId) {
         });
         if (questionData.senderId && questionData.senderId !== 'AI_GEMINI') {
             await updateDoc(doc(db, "users", questionData.senderId), { points: increment(5) });
+            getDoc(doc(db, "users", questionData.senderId)).then(uSnap => {
+                if (uSnap.exists() && uSnap.data().governorate) {
+                    window.updateGovPoints(uSnap.data().governorate, 5);
+                }
+            });
             if (questionData.senderId === currentUser.uid) {
                 userData.points += 5;
                 setupHeaderUI();
@@ -5946,39 +6652,6 @@ window.acceptAllPendingQuestions = async function() {
         showBeautifulAlert('error', 'خطأ', 'حدث خطأ أثناء الموافقة الجماعية: ' + e.message);
     }
 };
-
-let lastBackPressTime = 0;
-window.addEventListener('popstate', (e) => {
-    if (e.state) {
-        if (e.state.type === 'main') {
-            window.switchTab(e.state.tab, true);
-        } else if (e.state.type === 'sub') {
-            window.openPage(e.state.screen, true);
-        }
-    } else {
-        const activeScreen = document.querySelector('.screen.active');
-        if (activeScreen && activeScreen.id === 'tab-challenges') {
-            const now = Date.now();
-            if (now - lastBackPressTime < 2000) {
-                if (navigator.app && navigator.app.exitApp) {
-                    navigator.app.exitApp(); 
-                } else {
-                    window.close(); 
-                }
-            } else {
-                lastBackPressTime = now;
-                showBeautifulAlert('info', 'تنبيه', 'اضغط عودة مرة أخرى للخروج من التطبيق');
-                history.pushState(null, '', window.location.pathname);
-            }
-        } else {
-            window.switchTab('challenges', true);
-        }
-    }
-});
-
-setTimeout(() => {
-    history.replaceState({ tab: 'challenges', type: 'main' }, '', '#challenges');
-}, 1500);
 
 window.setDeviceFCMToken = async function(token) {
     if (currentUser) {
@@ -6633,15 +7306,6 @@ window.buyStoreItem = async (type, price) => {
     }
 };
 
-const originalOpenPage = window.openPage;
-window.openPage = async (screenId, skipHistory = false) => {
-    if (screenId === 'screen-hacker-store') {
-        document.getElementById('store-user-balance').innerText = `$${userData.balance || 0}`;
-        if(window.updateStoreButtons) window.updateStoreButtons(); 
-    }
-    originalOpenPage(screenId, skipHistory);
-};
-
 let newsCarouselInterval = null;
 let currentNewsSlide = 0;
 let tempNewsImageBase64 = null;
@@ -6902,77 +7566,92 @@ window.deleteNewsItem = async (id) => {
     }
 };
 
-const originalSwitchTab = window.switchTab;
-window.switchTab = (tab, skipHistory = false) => {
-    originalSwitchTab(tab, skipHistory);
-    if (tab !== 'news' && newsCarouselInterval) {
-        clearInterval(newsCarouselInterval);
-    }
-    if (tab === 'news') {
-        const navs = document.querySelectorAll('.nav-item');
-        navs.forEach(n => { n.classList.remove('active', 'text-indigo-600'); n.classList.add('text-gray-400'); });
-        navs[2].classList.add('active', 'text-indigo-600'); 
-        loadStudentNews();
-    }
-};
-
-// دوال نظام حفظ الحسابات
 window.saveAccountLocal = function(uid, email, pass, name, photo, rememberMe) {
     let accounts = JSON.parse(localStorage.getItem('saved_accounts_v1') || '[]');
-    // إزالة الحساب إذا كان موجود مسبقاً حتى نحدث بياناته
     accounts = accounts.filter(acc => acc.uid !== uid);
     
     accounts.unshift({
-        uid: uid,
-        email: email,
-        name: name,
-        photo: photo,
-        pass: rememberMe ? pass : null,
-        hasPasswordSaved: rememberMe
+        uid: uid, email: email, name: name, photo: photo,
+        pass: rememberMe ? pass : null, hasPasswordSaved: rememberMe
     });
+    
     localStorage.setItem('saved_accounts_v1', JSON.stringify(accounts));
+    
+    try {
+        if (window.SketchwareJS && typeof window.SketchwareJS.backupAccount === 'function') {
+            window.SketchwareJS.backupAccount(JSON.stringify(accounts));
+        }
+    } catch(e) {}
 };
 
-window.checkAndShowSavedAccounts = function() {
-    const accounts = JSON.parse(localStorage.getItem('saved_accounts_v1') || '[]');
+window.renderSavedAccountsView = function(accounts) {
     const savedView = document.getElementById('saved-accounts-view');
     const loginForm = document.getElementById('login-form');
     const signupForm = document.getElementById('signup-form');
     const authTabs = document.querySelector('.auth-tabs');
 
-    if (accounts.length > 0) {
-        loginForm.classList.add('hidden');
-        signupForm.classList.add('hidden');
-        if(authTabs) authTabs.classList.add('hidden');
-        savedView.classList.remove('hidden');
+    loginForm.classList.add('hidden');
+    signupForm.classList.add('hidden');
+    if(authTabs) authTabs.classList.add('hidden');
+    savedView.classList.remove('hidden');
+    
+    const listDiv = document.getElementById('saved-accounts-list');
+    listDiv.innerHTML = '';
+    
+    accounts.forEach(acc => {
+        const btn = document.createElement('div');
+        btn.className = "flex items-center justify-between bg-white border border-gray-200 p-4 rounded-[1.25rem] shadow-sm cursor-pointer hover:border-indigo-300 hover:shadow-md transition-all active:scale-95";
+        btn.onclick = () => loginWithSavedAccount(acc.uid);
         
-        const listDiv = document.getElementById('saved-accounts-list');
-        listDiv.innerHTML = '';
-        
-        accounts.forEach(acc => {
-            const btn = document.createElement('div');
-            btn.className = "flex items-center justify-between bg-white border border-gray-200 p-4 rounded-[1.25rem] shadow-sm cursor-pointer hover:border-indigo-300 hover:shadow-md transition-all active:scale-95";
-            btn.onclick = () => loginWithSavedAccount(acc.uid);
-            
-            btn.innerHTML = `
-                <div class="flex items-center gap-4 w-full">
-                    <div class="relative shrink-0">
-                        <img src="${acc.photo}" class="w-16 h-16 rounded-full border border-gray-100 object-cover shadow-sm">
-                        ${acc.hasPasswordSaved ? '<div class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>' : ''}
-                    </div>
-                    <div class="flex-1 text-right">
-                        <h4 class="font-black text-gray-800 text-lg">${acc.name}</h4>
-                        <p class="text-xs text-gray-400 mt-1">
-                            ${acc.hasPasswordSaved ? '<span class="text-green-500 font-bold">جاهز للدخول</span>' : 'يطلب كلمة المرور'}
-                        </p>
-                    </div>
-                    <i class="fas fa-chevron-left text-gray-300 text-sm"></i>
+        btn.innerHTML = `
+            <div class="flex items-center gap-4 w-full">
+                <div class="relative shrink-0">
+                    <img src="${acc.photo}" class="w-16 h-16 rounded-full border border-gray-100 object-cover shadow-sm">
+                    ${acc.hasPasswordSaved ? '<div class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>' : ''}
                 </div>
-            `;
-            listDiv.appendChild(btn);
-        });
+                <div class="flex-1 text-right">
+                    <h4 class="font-black text-gray-800 text-lg">${acc.name}</h4>
+                    <p class="text-xs text-gray-400 mt-1">
+                        ${acc.hasPasswordSaved ? '<span class="text-green-500 font-bold">جاهز للدخول</span>' : 'يطلب كلمة المرور'}
+                    </p>
+                </div>
+                <i class="fas fa-chevron-left text-gray-300 text-sm"></i>
+            </div>
+        `;
+        listDiv.appendChild(btn);
+    });
+};
+
+window.checkAndShowSavedAccounts = function(attempts = 0) {
+    let backup = "EMPTY";
+    
+    try {
+        if (window.SketchwareJS && typeof window.SketchwareJS.restoreAccount === 'function') {
+            backup = window.SketchwareJS.restoreAccount();
+        }
+    } catch(e) {}
+    
+    if (backup === "WAITING_PERMISSION") {
+        if (attempts < 10) {
+            setTimeout(() => { window.checkAndShowSavedAccounts(attempts + 1); }, 1000);
+            return;
+        }
+    } else if (backup !== "EMPTY" && backup !== "DENIED" && backup.length > 5) {
+        localStorage.setItem('saved_accounts_v1', backup);
+        try {
+            const accounts = JSON.parse(backup);
+            if (accounts.length > 0) {
+                window.renderSavedAccountsView(accounts);
+                return;
+            }
+        } catch(e) {}
+    }
+
+    const localAccounts = JSON.parse(localStorage.getItem('saved_accounts_v1') || '[]');
+    if (localAccounts.length > 0) {
+        window.renderSavedAccountsView(localAccounts);
     } else {
-        showLoginFormOnly();
+        window.showLoginFormOnly();
     }
 };
 
@@ -7560,6 +8239,1225 @@ window.rejectAITask = function() {
     
     window.closeAIReviewModal();
     showBeautifulAlert('info', 'تم الرفض', 'تم حذف نتيجة الاستخراج من الطابور.');
+};
+
+window.handleAndroidBack = function() {
+    try {
+        const openModals = document.querySelectorAll('.modal-overlay:not(.hidden)');
+        if (openModals.length > 0) {
+            openModals[openModals.length - 1].classList.add('hidden');
+            return;
+        }
+
+        const searchUi = document.getElementById('searching-ui');
+        if (searchUi && !searchUi.classList.contains('hidden')) {
+            if (typeof window.cancelSearch === 'function') window.cancelSearch();
+            return;
+        }
+
+        const vsScreen = document.getElementById('vs-screen');
+        const gameOverlay = document.getElementById('game-overlay');
+        if ((vsScreen && !vsScreen.classList.contains('hidden')) || (gameOverlay && !gameOverlay.classList.contains('hidden'))) {
+            if (typeof window.withdrawFromGame === 'function') window.withdrawFromGame();
+            return;
+        }
+
+        if (window.appNavigationHistory && window.appNavigationHistory.length > 1) {
+            window.appNavigationHistory.pop();
+            const prevScreen = window.appNavigationHistory[window.appNavigationHistory.length - 1];
+            
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            const targetScreen = document.getElementById(prevScreen);
+            if (targetScreen) targetScreen.classList.add('active');
+
+            if (prevScreen.startsWith('tab-')) {
+                const tabName = prevScreen.replace('tab-', '');
+                const navs = document.querySelectorAll('.nav-item');
+                navs.forEach(n => { n.classList.remove('active', 'text-indigo-600'); n.classList.add('text-gray-400'); });
+                if(tabName === 'challenges' && navs[0]) navs[0].classList.add('active', 'text-indigo-600');
+                if(tabName === 'leaderboard' && navs[1]) navs[1].classList.add('active', 'text-indigo-600'); 
+                if(tabName === 'news' && navs[2]) navs[2].classList.add('active', 'text-indigo-600'); 
+                if(tabName === 'profile' && navs[3]) navs[3].classList.add('active', 'text-indigo-600');
+            }
+        } else {
+            if (window.SketchwareJS) window.SketchwareJS.triggerExit();
+        }
+    } catch(e) {
+        if (window.SketchwareJS) window.SketchwareJS.triggerExit();
+    }
+};
+
+window.updateGovPoints = async function(govName, amount) {
+    if (!govName || amount === 0) return;
+    try {
+        await updateDoc(doc(db, "governorates", govName), { totalPoints: increment(amount) });
+    } catch (e) {
+        try {
+            await setDoc(doc(db, "governorates", govName), { totalPoints: amount });
+        } catch (err) {}
+    }
+};
+
+// ======================================================================
+// ==== دوال قسم ساعد ==================================================
+// ======================================================================
+
+window.backToSahad = function() {
+    switchTab('sahad');
+};
+
+window.switchTabSahad = function() {
+    switchTab('sahad');
+};
+
+// ======================================================================
+// ==== دالة فحص صلاحيات المستخدم الحالي ================================
+// ======================================================================
+
+window.isFullAdmin = function() {
+    return currentUser && userData && userData.email === ADMIN_EMAIL;
+};
+
+window.hasPermission = function(permKey) {
+    if (!currentUser || !userData) return false;
+    if (userData.email === ADMIN_EMAIL) return true;
+    if (userData.role !== 'moderator') return false;
+    if (!userData.permissions) return false;
+    return userData.permissions[permKey] === true;
+};
+
+// قائمة كل الأقسام الإدارية المتاحة للمشرفين
+window.ADMIN_PERMISSIONS_MAP = {
+    'hub':                { label: 'لوحة التحكم الرئيسية',     icon: 'fa-user-shield' },
+    'system':             { label: 'إعدادات النظام',           icon: 'fa-cogs' },
+    'users':              { label: 'إدارة المستخدمين',          icon: 'fa-users-cog' },
+    'edit-questions':     { label: 'تعديل الأسئلة',             icon: 'fa-edit' },
+    'stats':              { label: 'الإحصائيات',                icon: 'fa-chart-pie' },
+    'review-questions':   { label: 'مراجعة الأسئلة',            icon: 'fa-check-circle' },
+    'news':               { label: 'إدارة الأخبار',             icon: 'fa-images' },
+    'ai-extract':         { label: 'استخراج AI',                icon: 'fa-robot' },
+    'sahad-additions':    { label: 'إضافات ساعد',               icon: 'fa-plus-circle' },
+    'add-moderator':      { label: 'إضافة مشرفين',              icon: 'fa-user-shield' }
+};
+
+// إخفاء أزرار لوحة التحكم غير المسموحة للمشرف
+window.applyAdminPermissionsUI = function() {
+    const allBtns = document.querySelectorAll('[data-admin-section]');
+    allBtns.forEach(btn => {
+        const sectionKey = btn.getAttribute('data-admin-section');
+        let canShow = false;
+        if (window.isFullAdmin()) {
+            canShow = true;
+        } else if (userData && userData.role === 'moderator') {
+            // المشرف العادي يقدر يدخل فقط للأقسام المصرح لها
+            canShow = window.hasPermission(sectionKey);
+        }
+        if (canShow) {
+            btn.classList.remove('hidden');
+        } else {
+            btn.classList.add('hidden');
+        }
+    });
+};
+
+// ======================================================================
+// ==== سؤال وجواب (صحة + تعليم) ======================================
+// ======================================================================
+
+window.submitSahadQA = async function(section) {
+    if (!currentUser || !userData) return;
+    const inputId = section === 'health' ? 'sahad-health-qa-input' : 'sahad-edu-qa-input';
+    const inputEl = document.getElementById(inputId);
+    if (!inputEl) return;
+    const text = inputEl.value.trim();
+    if (text.length < 3) {
+        showBeautifulAlert('warning', 'تنبيه', 'يرجى كتابة سؤال صحيح (3 أحرف على الأقل)');
+        return;
+    }
+    try {
+        showAuthLoading('جاري إرسال السؤال...');
+        await addDoc(collection(db, "sahad_qa"), {
+            section: section,
+            question: text,
+            answer: '',
+            answered: false,
+            userId: currentUser.uid,
+            userName: userData.name,
+            userPhoto: userData.photo,
+            createdAt: serverTimestamp()
+        });
+        inputEl.value = '';
+        hideAuthLoading();
+        showBeautifulAlert('success', 'تم الإرسال', 'تم إرسال سؤالك، سيتم الرد عليه من قبل الإدارة قريباً');
+        window.loadSahadQA(section);
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل إرسال السؤال، حاول لاحقاً');
+    }
+};
+
+window.loadSahadQA = async function(section) {
+    if (!currentUser) return;
+    const listId = section === 'health' ? 'sahad-health-qa-list' : 'sahad-edu-qa-list';
+    const listEl = document.getElementById(listId);
+    if (!listEl) return;
+    listEl.innerHTML = GLOBAL_LOADER_HTML;
+    try {
+        const q = query(
+            collection(db, "sahad_qa"),
+            where("userId", "==", currentUser.uid),
+            where("section", "==", section)
+        );
+        const snap = await getDocs(q);
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+
+        if (items.length === 0) {
+            listEl.innerHTML = `
+                <div class="text-center py-10 bg-white rounded-2xl border border-gray-100">
+                    <i class="fas fa-comment-slash text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500 font-bold text-sm">لا توجد أسئلة بعد</p>
+                    <p class="text-gray-400 text-xs mt-1">كن أول من يرسل سؤالاً</p>
+                </div>`;
+            return;
+        }
+
+        let html = '';
+        items.forEach(item => {
+            const dateStr = item.createdAt && item.createdAt.toDate ? item.createdAt.toDate().toLocaleDateString('ar-EG') : '';
+            const answered = item.answered === true && item.answer;
+            html += `
+                <div class="bg-white rounded-2xl p-4 border ${answered ? 'border-green-200' : 'border-yellow-200'} shadow-sm">
+                    <div class="flex items-start gap-3 mb-3">
+                        <div class="w-8 h-8 rounded-full ${answered ? 'bg-green-100 text-green-600' : 'bg-yellow-100 text-yellow-600'} flex items-center justify-center shrink-0">
+                            <i class="fas fa-question text-sm"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-bold text-gray-800 text-sm leading-relaxed">${item.question}</p>
+                            <p class="text-[10px] text-gray-400 mt-1">${dateStr}</p>
+                        </div>
+                    </div>
+                    ${answered ? `
+                        <div class="bg-green-50 border border-green-100 rounded-xl p-3 flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-600 text-sm mt-0.5"></i>
+                            <div class="flex-1">
+                                <p class="text-[10px] font-bold text-green-700 mb-1">الرد الرسمي</p>
+                                <p class="text-sm text-gray-700 leading-relaxed">${item.answer}</p>
+                            </div>
+                        </div>
+                    ` : `
+                        <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-2 flex items-center gap-2">
+                            <i class="fas fa-hourglass-half text-yellow-500 text-xs"></i>
+                            <p class="text-[11px] text-yellow-700 font-bold">بانتظار الرد من الإدارة</p>
+                        </div>
+                    `}
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-8">حدث خطأ في التحميل</p>';
+    }
+};
+
+window.checkSahadQANotifications = async function() {
+    if (!currentUser) return;
+    try {
+        for (const section of ['health', 'education']) {
+            const q = query(
+                collection(db, "sahad_qa"),
+                where("userId", "==", currentUser.uid),
+                where("section", "==", section),
+                where("answered", "==", true),
+                where("seenByUser", "==", false)
+            );
+            const snap = await getDocs(q);
+            const dotId = section === 'health' ? 'sahad-health-qa-dot' : 'sahad-edu-qa-dot';
+            const dot = document.getElementById(dotId);
+            if (dot) {
+                if (!snap.empty) dot.classList.add('visible');
+                else dot.classList.remove('visible');
+            }
+        }
+    } catch (e) {}
+};
+
+window.markSahadQAAsSeen = async function(section) {
+    if (!currentUser) return;
+    try {
+        const q = query(
+            collection(db, "sahad_qa"),
+            where("userId", "==", currentUser.uid),
+            where("section", "==", section),
+            where("answered", "==", true),
+            where("seenByUser", "==", false)
+        );
+        const snap = await getDocs(q);
+        const batch = writeBatch(db);
+        snap.forEach(d => batch.update(d.ref, { seenByUser: true }));
+        await batch.commit();
+        const dotId = section === 'health' ? 'sahad-health-qa-dot' : 'sahad-edu-qa-dot';
+        const dot = document.getElementById(dotId);
+        if (dot) dot.classList.remove('visible');
+    } catch (e) {}
+};
+
+// ======================================================================
+// ==== معلومات عامة + نصائح ===========================================
+// ======================================================================
+
+window.loadSahadInfo = async function(section) {
+    const listId = section === 'health' ? 'sahad-health-info-list' : 'sahad-edu-tips-list';
+    const listEl = document.getElementById(listId);
+    if (!listEl) return;
+    listEl.innerHTML = GLOBAL_LOADER_HTML;
+    try {
+        const q = query(
+            collection(db, "sahad_info"),
+            where("section", "==", section)
+        );
+        const snap = await getDocs(q);
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+
+        if (items.length === 0) {
+            const emptyMsg = section === 'health' ? 'لا توجد معلومات عامة حالياً' : 'لا توجد نصائح حالياً';
+            listEl.innerHTML = `
+                <div class="text-center py-10 bg-white rounded-2xl border border-gray-100">
+                    <i class="fas fa-inbox text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500 font-bold text-sm">${emptyMsg}</p>
+                </div>`;
+            return;
+        }
+
+        const isHealth = section === 'health';
+        let html = '';
+        items.forEach((item, idx) => {
+            const dateStr = item.createdAt && item.createdAt.toDate ? item.createdAt.toDate().toLocaleDateString('ar-EG') : '';
+            html += `
+                <div class="bg-white rounded-2xl p-4 border-l-4 ${isHealth ? 'border-l-blue-500' : 'border-l-amber-500'} shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl ${isHealth ? 'bg-blue-50 text-blue-600' : 'bg-amber-50 text-amber-600'} flex items-center justify-center shrink-0">
+                            <i class="fas ${isHealth ? 'fa-info-circle' : 'fa-lightbulb'}"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-gray-800 text-sm leading-relaxed font-medium whitespace-pre-line">${item.text}</p>
+                            <p class="text-[10px] text-gray-400 mt-2">${dateStr}</p>
+                        </div>
+                    </div>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-8">حدث خطأ في التحميل</p>';
+    }
+};
+
+// ======================================================================
+// ==== فرص عمل (صحة + تعليم) ==========================================
+// ======================================================================
+
+window.loadSahadJobs = async function(section) {
+    const listId = section === 'health' ? 'sahad-health-jobs-list' : 'sahad-edu-jobs-list';
+    const listEl = document.getElementById(listId);
+    if (!listEl) return;
+    listEl.innerHTML = GLOBAL_LOADER_HTML;
+    try {
+        const q = query(
+            collection(db, "sahad_jobs"),
+            where("section", "==", section)
+        );
+        const snap = await getDocs(q);
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+
+        if (items.length === 0) {
+            listEl.innerHTML = `
+                <div class="text-center py-10 bg-white rounded-2xl border border-gray-100">
+                    <i class="fas fa-briefcase text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500 font-bold text-sm">لا توجد فرص عمل حالياً</p>
+                </div>`;
+            return;
+        }
+
+        let html = '';
+        items.forEach(item => {
+            const dateStr = item.createdAt && item.createdAt.toDate ? item.createdAt.toDate().toLocaleDateString('ar-EG') : '';
+            const phoneClean = (item.phone || '').replace(/[^0-9+]/g, '');
+            html += `
+                <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3 pb-3 border-b border-gray-100">
+                        <div class="w-11 h-11 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-xl flex items-center justify-center text-emerald-600 shrink-0">
+                            <i class="fas fa-briefcase text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-black text-gray-800 text-sm truncate">${item.title || 'فرصة عمل'}</h3>
+                            <p class="text-[11px] text-emerald-600 font-bold mt-0.5 truncate"><i class="fas fa-building text-[9px]"></i> ${item.place || ''}</p>
+                        </div>
+                    </div>
+                    ${item.details ? `<p class="text-xs text-gray-700 leading-relaxed mb-3 whitespace-pre-line">${item.details}</p>` : ''}
+                    ${item.conditions ? `
+                        <div class="bg-gray-50 rounded-lg p-2.5 mb-3 border border-gray-100">
+                            <p class="text-[10px] font-black text-gray-500 mb-1"><i class="fas fa-list-check"></i> الشروط</p>
+                            <p class="text-[11px] text-gray-700 whitespace-pre-line">${item.conditions}</p>
+                        </div>
+                    ` : ''}
+                    <div class="flex items-center justify-between gap-2">
+                        <div class="bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-100">
+                            <p class="text-[9px] font-bold text-amber-700">الراتب</p>
+                            <p class="text-xs font-black text-amber-800">${item.salary || 'غير محدد'}</p>
+                        </div>
+                        ${phoneClean ? `
+                            <a href="tel:${phoneClean}" class="flex-1 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-black py-2.5 px-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2 text-xs">
+                                <i class="fas fa-phone"></i> اتصال
+                            </a>
+                        ` : ''}
+                    </div>
+                    <p class="text-[9px] text-gray-400 mt-2">${dateStr}</p>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-8">حدث خطأ في التحميل</p>';
+    }
+};
+
+// ======================================================================
+// ==== منشورات (أخبار وزارة الصحة / التربية) ==========================
+// ======================================================================
+
+window.loadSahadPosts = async function(section) {
+    const listId = section === 'health' ? 'sahad-health-news-list' : 'sahad-edu-news-list';
+    const listEl = document.getElementById(listId);
+    if (!listEl) return;
+    listEl.innerHTML = GLOBAL_LOADER_HTML;
+    try {
+        const q = query(
+            collection(db, "sahad_posts"),
+            where("section", "==", section)
+        );
+        const snap = await getDocs(q);
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+
+        if (items.length === 0) {
+            listEl.innerHTML = `
+                <div class="text-center py-10 bg-white rounded-2xl border border-gray-100">
+                    <i class="fas fa-newspaper text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500 font-bold text-sm">لا توجد منشورات حالياً</p>
+                </div>`;
+            return;
+        }
+
+        let html = '';
+        items.forEach(item => {
+            const dateStr = item.createdAt && item.createdAt.toDate ? item.createdAt.toDate().toLocaleDateString('ar-EG', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+            html += `
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+                    <div class="bg-gradient-to-r ${section === 'health' ? 'from-red-500 to-pink-600' : 'from-blue-500 to-indigo-600'} p-3">
+                        <h3 class="font-black text-white text-sm leading-relaxed">${item.title}</h3>
+                        <p class="text-[9px] text-white/80 mt-1"><i class="fas fa-clock"></i> ${dateStr}</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-700 leading-relaxed whitespace-pre-line">${item.body}</p>
+                    </div>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-8">حدث خطأ في التحميل</p>';
+    }
+};
+
+// ======================================================================
+// ==== الأخبار العامة =================================================
+// ======================================================================
+
+window.loadSahadGeneralNews = async function() {
+    const listEl = document.getElementById('sahad-general-news-list');
+    if (!listEl) return;
+    listEl.innerHTML = GLOBAL_LOADER_HTML;
+    try {
+        const q = query(collection(db, "sahad_general_news"));
+        const snap = await getDocs(q);
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+
+        if (items.length === 0) {
+            listEl.innerHTML = `
+                <div class="text-center py-10 bg-white rounded-2xl border border-gray-100">
+                    <i class="fas fa-bullhorn text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500 font-bold text-sm">لا توجد أخبار عامة حالياً</p>
+                </div>`;
+            return;
+        }
+
+        let html = '';
+        items.forEach(item => {
+            const dateStr = item.createdAt && item.createdAt.toDate ? item.createdAt.toDate().toLocaleDateString('ar-EG', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+            html += `
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+                    <div class="bg-gradient-to-r from-emerald-500 to-teal-600 p-3">
+                        <h3 class="font-black text-white text-sm leading-relaxed">${item.title}</h3>
+                        <p class="text-[9px] text-white/80 mt-1"><i class="fas fa-clock"></i> ${dateStr}</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-700 leading-relaxed whitespace-pre-line">${item.body}</p>
+                    </div>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-8">حدث خطأ في التحميل</p>';
+    }
+};
+
+// ======================================================================
+// ==== لوحة الإدارة: استقبال الأسئلة والأجوبة =========================
+// ======================================================================
+
+window.adminQACurrentSection = 'health';
+
+window.switchAdminQATab = function(section) {
+    window.adminQACurrentSection = section;
+    const tabHealth = document.getElementById('admin-qa-tab-health');
+    const tabEdu = document.getElementById('admin-qa-tab-education');
+    if (tabHealth && tabEdu) {
+        if (section === 'health') {
+            tabHealth.className = "flex-1 py-2.5 rounded-xl font-black text-xs bg-white text-red-600 shadow-sm transition-all";
+            tabEdu.className = "flex-1 py-2.5 rounded-xl font-black text-xs text-gray-500 transition-all";
+        } else {
+            tabEdu.className = "flex-1 py-2.5 rounded-xl font-black text-xs bg-white text-indigo-600 shadow-sm transition-all";
+            tabHealth.className = "flex-1 py-2.5 rounded-xl font-black text-xs text-gray-500 transition-all";
+        }
+    }
+    window.loadAdminQAList();
+};
+
+window.loadAdminQAList = async function() {
+    const listEl = document.getElementById('admin-qa-list');
+    if (!listEl) return;
+    listEl.innerHTML = GLOBAL_LOADER_HTML;
+    try {
+        const q = query(
+            collection(db, "sahad_qa"),
+            where("section", "==", window.adminQACurrentSection)
+        );
+        const snap = await getDocs(q);
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const aAns = a.answered ? 1 : 0;
+            const bAns = b.answered ? 1 : 0;
+            if (aAns !== bAns) return aAns - bAns;
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+
+        if (items.length === 0) {
+            listEl.innerHTML = `
+                <div class="text-center py-10 bg-white rounded-2xl border border-gray-100">
+                    <i class="fas fa-inbox text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500 font-bold text-sm">لا توجد أسئلة في هذا القسم</p>
+                </div>`;
+            return;
+        }
+
+        let html = '';
+        items.forEach(item => {
+            const dateStr = item.createdAt && item.createdAt.toDate ? item.createdAt.toDate().toLocaleDateString('ar-EG') : '';
+            const answered = item.answered === true && item.answer;
+            html += `
+                <div class="bg-white rounded-2xl p-4 border ${answered ? 'border-green-200' : 'border-yellow-200'} shadow-sm">
+                    <div class="flex items-center gap-2 mb-3">
+                        <img src="${item.userPhoto || 'https://ui-avatars.com/api/?name=User'}" class="w-9 h-9 rounded-full border border-gray-200">
+                        <div class="flex-1 min-w-0">
+                            <p class="font-bold text-gray-800 text-xs truncate">${item.userName || 'مستخدم'}</p>
+                            <p class="text-[9px] text-gray-400">${dateStr}</p>
+                        </div>
+                        ${answered ? '<span class="bg-green-100 text-green-700 text-[9px] font-black px-2 py-1 rounded">تم الرد</span>' : '<span class="bg-yellow-100 text-yellow-700 text-[9px] font-black px-2 py-1 rounded">معلق</span>'}
+                    </div>
+                    <p class="font-bold text-gray-800 text-sm leading-relaxed mb-3 bg-gray-50 p-3 rounded-xl">${item.question}</p>
+                    ${answered ? `
+                        <div class="bg-green-50 border border-green-100 rounded-xl p-3 mb-3">
+                            <p class="text-[10px] font-bold text-green-700 mb-1">الرد الحالي</p>
+                            <p class="text-sm text-gray-700 leading-relaxed">${item.answer}</p>
+                        </div>
+                    ` : ''}
+                    <button onclick="openAdminReplyModal('${item.id}', '${(item.question || '').replace(/'/g, "\\'").replace(/"/g, '&quot;')}')" class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold py-2.5 rounded-xl text-xs shadow-md active:scale-95 transition">
+                        <i class="fas fa-reply"></i> ${answered ? 'تعديل الرد' : 'إرسال الرد'}
+                    </button>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-8">حدث خطأ في التحميل</p>';
+    }
+};
+
+window.openAdminReplyModal = function(qaId, questionText) {
+    const existing = document.getElementById('admin-reply-modal');
+    if (existing) existing.remove();
+
+    const modal = document.createElement('div');
+    modal.id = 'admin-reply-modal';
+    modal.className = 'modal-overlay';
+    modal.style.zIndex = '99999';
+    modal.style.display = 'flex';
+    modal.innerHTML = `
+        <div class="modal-content relative bg-white p-6 rounded-3xl max-w-md w-full mx-4 shadow-2xl">
+            <button onclick="document.getElementById('admin-reply-modal').remove()" class="absolute top-4 right-4 text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+            <h3 class="font-black text-lg text-indigo-700 mb-3 text-center">إرسال الرد</h3>
+            <div class="bg-gray-50 p-3 rounded-xl mb-4 border border-gray-100">
+                <p class="text-[10px] font-bold text-gray-500 mb-1">السؤال:</p>
+                <p class="text-sm text-gray-800 font-bold leading-relaxed">${questionText}</p>
+            </div>
+            <textarea id="admin-reply-textarea" class="input-box h-28 text-sm mb-4" placeholder="اكتب الرد هنا..." maxlength="1000"></textarea>
+            <div class="flex gap-2">
+                <button onclick="document.getElementById('admin-reply-modal').remove()" class="flex-1 bg-gray-100 text-gray-600 py-3 rounded-xl font-bold">إلغاء</button>
+                <button onclick="submitAdminReply('${qaId}')" class="flex-1 bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 rounded-xl font-bold shadow-md">إرسال</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+};
+
+window.submitAdminReply = async function(qaId) {
+    const textarea = document.getElementById('admin-reply-textarea');
+    const replyText = textarea ? textarea.value.trim() : '';
+    if (replyText.length < 2) {
+        showBeautifulAlert('warning', 'تنبيه', 'يرجى كتابة الرد');
+        return;
+    }
+    try {
+        showAuthLoading('جاري الإرسال...');
+        const qaDoc = await getDoc(doc(db, "sahad_qa", qaId));
+        if (!qaDoc.exists()) { hideAuthLoading(); showBeautifulAlert('error', 'خطأ', 'السؤال غير موجود'); return; }
+        const qaData = qaDoc.data();
+
+        await updateDoc(doc(db, "sahad_qa", qaId), {
+            answer: replyText,
+            answered: true,
+            seenByUser: false,
+            answeredAt: serverTimestamp(),
+            answeredBy: currentUser.uid
+        });
+
+        await addDoc(collection(db, "notifications"), {
+            userId: qaData.userId,
+            type: 'reward',
+            message: `✅ تم الرد على سؤالك في قسم ${qaData.section === 'health' ? 'الصحة' : 'التعليم'}:\n${replyText}`,
+            read: false,
+            createdAt: serverTimestamp()
+        });
+
+        hideAuthLoading();
+        const modal = document.getElementById('admin-reply-modal');
+        if (modal) modal.remove();
+        showBeautifulAlert('success', 'تم الإرسال', 'تم إرسال الرد للطالب بنجاح');
+        window.loadAdminQAList();
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل إرسال الرد');
+    }
+};
+
+// ======================================================================
+// ==== لوحة الإدارة: إرسال معلومة / نصيحة =============================
+// ======================================================================
+
+window.adminInfoCurrentSection = 'health';
+
+window.switchAdminInfoTab = function(section) {
+    window.adminInfoCurrentSection = section;
+    const tabHealth = document.getElementById('admin-info-tab-health');
+    const tabEdu = document.getElementById('admin-info-tab-education');
+    if (tabHealth && tabEdu) {
+        if (section === 'health') {
+            tabHealth.className = "flex-1 py-2.5 rounded-xl font-black text-xs bg-white text-red-600 shadow-sm transition-all";
+            tabEdu.className = "flex-1 py-2.5 rounded-xl font-black text-xs text-gray-500 transition-all";
+        } else {
+            tabEdu.className = "flex-1 py-2.5 rounded-xl font-black text-xs bg-white text-indigo-600 shadow-sm transition-all";
+            tabHealth.className = "flex-1 py-2.5 rounded-xl font-black text-xs text-gray-500 transition-all";
+        }
+    }
+    const input = document.getElementById('admin-info-input');
+    if (input) input.placeholder = section === 'health' ? 'اكتب المعلومة الصحية هنا...' : 'اكتب النصيحة التعليمية هنا...';
+    window.loadAdminInfoList();
+};
+
+window.publishSahadInfo = async function() {
+    const input = document.getElementById('admin-info-input');
+    const text = input ? input.value.trim() : '';
+    if (text.length < 3) {
+        showBeautifulAlert('warning', 'تنبيه', 'يرجى كتابة المحتوى');
+        return;
+    }
+    try {
+        showAuthLoading('جاري النشر...');
+        await addDoc(collection(db, "sahad_info"), {
+            section: window.adminInfoCurrentSection,
+            text: text,
+            createdBy: currentUser.uid,
+            createdAt: serverTimestamp()
+        });
+        input.value = '';
+        hideAuthLoading();
+        showBeautifulAlert('success', 'تم النشر', 'تم نشر المحتوى بنجاح');
+        window.loadAdminInfoList();
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل النشر');
+    }
+};
+
+window.loadAdminInfoList = async function() {
+    const listEl = document.getElementById('admin-info-list');
+    if (!listEl) return;
+    listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">جاري التحميل...</p>';
+    try {
+        const q = query(
+            collection(db, "sahad_info"),
+            where("section", "==", window.adminInfoCurrentSection)
+        );
+        const snap = await getDocs(q);
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+        if (items.length === 0) {
+            listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">لا توجد محتويات</p>';
+            return;
+        }
+        let html = '';
+        items.forEach(item => {
+            html += `
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100 flex items-start gap-2">
+                    <p class="flex-1 text-xs text-gray-700 leading-relaxed whitespace-pre-line">${item.text}</p>
+                    <button onclick="deleteSahadInfoItem('${item.id}')" class="w-7 h-7 rounded-full bg-red-100 text-red-500 flex items-center justify-center hover:bg-red-200 transition shrink-0">
+                        <i class="fas fa-trash text-[10px]"></i>
+                    </button>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-4 text-xs">خطأ</p>';
+    }
+};
+
+window.deleteSahadInfoItem = async function(id) {
+    if (!confirm("هل تريد حذف هذا المحتوى؟")) return;
+    try {
+        await deleteDoc(doc(db, "sahad_info", id));
+        showBeautifulAlert('success', 'تم الحذف', 'تم حذف المحتوى');
+        window.loadAdminInfoList();
+    } catch (e) { showBeautifulAlert('error', 'خطأ', 'فشل الحذف'); }
+};
+
+// ======================================================================
+// ==== لوحة الإدارة: إضافة فرصة عمل ===================================
+// ======================================================================
+
+window.publishSahadJob = async function() {
+    const section = document.getElementById('admin-job-section').value;
+    const place = document.getElementById('admin-job-place').value.trim();
+    const title = document.getElementById('admin-job-title').value.trim();
+    const details = document.getElementById('admin-job-details').value.trim();
+    const conditions = document.getElementById('admin-job-conditions').value.trim();
+    const salary = document.getElementById('admin-job-salary').value.trim();
+    const phone = document.getElementById('admin-job-phone').value.trim();
+
+    if (!place || !title || !salary || !phone) {
+        showBeautifulAlert('warning', 'تنبيه', 'يرجى إكمال الحقول المطلوبة (المكان، العنوان، الراتب، الهاتف)');
+        return;
+    }
+    try {
+        showAuthLoading('جاري النشر...');
+        await addDoc(collection(db, "sahad_jobs"), {
+            section: section,
+            place: place,
+            title: title,
+            details: details,
+            conditions: conditions,
+            salary: salary,
+            phone: phone,
+            createdBy: currentUser.uid,
+            createdAt: serverTimestamp()
+        });
+        document.getElementById('admin-job-place').value = '';
+        document.getElementById('admin-job-title').value = '';
+        document.getElementById('admin-job-details').value = '';
+        document.getElementById('admin-job-conditions').value = '';
+        document.getElementById('admin-job-salary').value = '';
+        document.getElementById('admin-job-phone').value = '';
+        hideAuthLoading();
+        showBeautifulAlert('success', 'تم النشر', 'تم نشر فرصة العمل');
+        window.loadAdminJobsList();
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل النشر');
+    }
+};
+
+window.loadAdminJobsList = async function() {
+    const listEl = document.getElementById('admin-jobs-list');
+    if (!listEl) return;
+    listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">جاري التحميل...</p>';
+    try {
+        const snap = await getDocs(collection(db, "sahad_jobs"));
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+        if (items.length === 0) {
+            listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">لا توجد فرص</p>';
+            return;
+        }
+        let html = '';
+        items.forEach(item => {
+            const badgeColor = item.section === 'health' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700';
+            const badgeText = item.section === 'health' ? 'صحة' : 'تعليم';
+            html += `
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                    <div class="flex items-start gap-2 mb-1">
+                        <span class="${badgeColor} text-[9px] font-black px-2 py-0.5 rounded">${badgeText}</span>
+                        <p class="flex-1 text-xs font-black text-gray-800">${item.title}</p>
+                        <button onclick="deleteSahadJobItem('${item.id}')" class="w-7 h-7 rounded-full bg-red-100 text-red-500 flex items-center justify-center hover:bg-red-200 transition shrink-0">
+                            <i class="fas fa-trash text-[10px]"></i>
+                        </button>
+                    </div>
+                    <p class="text-[10px] text-gray-500">${item.place} • ${item.salary}</p>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-4 text-xs">خطأ</p>';
+    }
+};
+
+window.deleteSahadJobItem = async function(id) {
+    if (!confirm("هل تريد حذف هذه الفرصة؟")) return;
+    try {
+        await deleteDoc(doc(db, "sahad_jobs", id));
+        showBeautifulAlert('success', 'تم الحذف', 'تم حذف الفرصة');
+        window.loadAdminJobsList();
+    } catch (e) { showBeautifulAlert('error', 'خطأ', 'فشل الحذف'); }
+};
+
+// ======================================================================
+// ==== لوحة الإدارة: إرسال منشور ======================================
+// ======================================================================
+
+window.publishSahadPost = async function() {
+    const section = document.getElementById('admin-post-section').value;
+    const title = document.getElementById('admin-post-title').value.trim();
+    const body = document.getElementById('admin-post-body').value.trim();
+    if (!title || !body) {
+        showBeautifulAlert('warning', 'تنبيه', 'يرجى ملء العنوان والتفاصيل');
+        return;
+    }
+    try {
+        showAuthLoading('جاري النشر...');
+        await addDoc(collection(db, "sahad_posts"), {
+            section: section,
+            title: title,
+            body: body,
+            createdBy: currentUser.uid,
+            createdAt: serverTimestamp()
+        });
+        document.getElementById('admin-post-title').value = '';
+        document.getElementById('admin-post-body').value = '';
+        hideAuthLoading();
+        showBeautifulAlert('success', 'تم النشر', 'تم نشر المنشور');
+        window.loadAdminPostsList();
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل النشر');
+    }
+};
+
+window.loadAdminPostsList = async function() {
+    const listEl = document.getElementById('admin-posts-list');
+    if (!listEl) return;
+    listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">جاري التحميل...</p>';
+    try {
+        const snap = await getDocs(collection(db, "sahad_posts"));
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+        if (items.length === 0) {
+            listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">لا توجد منشورات</p>';
+            return;
+        }
+        let html = '';
+        items.forEach(item => {
+            const badgeColor = item.section === 'health' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700';
+            const badgeText = item.section === 'health' ? 'صحة' : 'تعليم';
+            html += `
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                    <div class="flex items-start gap-2 mb-1">
+                        <span class="${badgeColor} text-[9px] font-black px-2 py-0.5 rounded">${badgeText}</span>
+                        <p class="flex-1 text-xs font-black text-gray-800 truncate">${item.title}</p>
+                        <button onclick="deleteSahadPostItem('${item.id}')" class="w-7 h-7 rounded-full bg-red-100 text-red-500 flex items-center justify-center hover:bg-red-200 transition shrink-0">
+                            <i class="fas fa-trash text-[10px]"></i>
+                        </button>
+                    </div>
+                    <p class="text-[10px] text-gray-500 line-clamp-2">${item.body}</p>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-4 text-xs">خطأ</p>';
+    }
+};
+
+window.deleteSahadPostItem = async function(id) {
+    if (!confirm("هل تريد حذف هذا المنشور؟")) return;
+    try {
+        await deleteDoc(doc(db, "sahad_posts", id));
+        showBeautifulAlert('success', 'تم الحذف', 'تم حذف المنشور');
+        window.loadAdminPostsList();
+    } catch (e) { showBeautifulAlert('error', 'خطأ', 'فشل الحذف'); }
+};
+
+// ======================================================================
+// ==== لوحة الإدارة: أخبار عامة =======================================
+// ======================================================================
+
+window.publishSahadGeneralNews = async function() {
+    const title = document.getElementById('admin-general-news-title').value.trim();
+    const body = document.getElementById('admin-general-news-body').value.trim();
+    if (!title || !body) {
+        showBeautifulAlert('warning', 'تنبيه', 'يرجى ملء العنوان والتفاصيل');
+        return;
+    }
+    try {
+        showAuthLoading('جاري النشر...');
+        await addDoc(collection(db, "sahad_general_news"), {
+            title: title,
+            body: body,
+            createdBy: currentUser.uid,
+            createdAt: serverTimestamp()
+        });
+        document.getElementById('admin-general-news-title').value = '';
+        document.getElementById('admin-general-news-body').value = '';
+        hideAuthLoading();
+        showBeautifulAlert('success', 'تم النشر', 'تم نشر الخبر العام');
+        window.loadAdminGeneralNewsList();
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل النشر');
+    }
+};
+
+window.loadAdminGeneralNewsList = async function() {
+    const listEl = document.getElementById('admin-general-news-list');
+    if (!listEl) return;
+    listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">جاري التحميل...</p>';
+    try {
+        const snap = await getDocs(collection(db, "sahad_general_news"));
+        let items = [];
+        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+        items.sort((a, b) => {
+            const tA = a.createdAt ? (a.createdAt.toDate ? a.createdAt.toDate().getTime() : 0) : 0;
+            const tB = b.createdAt ? (b.createdAt.toDate ? b.createdAt.toDate().getTime() : 0) : 0;
+            return tB - tA;
+        });
+        if (items.length === 0) {
+            listEl.innerHTML = '<p class="text-center text-gray-400 py-4 text-xs">لا توجد أخبار</p>';
+            return;
+        }
+        let html = '';
+        items.forEach(item => {
+            html += `
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                    <div class="flex items-start gap-2 mb-1">
+                        <p class="flex-1 text-xs font-black text-gray-800 truncate">${item.title}</p>
+                        <button onclick="deleteSahadGeneralNewsItem('${item.id}')" class="w-7 h-7 rounded-full bg-red-100 text-red-500 flex items-center justify-center hover:bg-red-200 transition shrink-0">
+                            <i class="fas fa-trash text-[10px]"></i>
+                        </button>
+                    </div>
+                    <p class="text-[10px] text-gray-500 line-clamp-2">${item.body}</p>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-4 text-xs">خطأ</p>';
+    }
+};
+
+window.deleteSahadGeneralNewsItem = async function(id) {
+    if (!confirm("هل تريد حذف هذا الخبر؟")) return;
+    try {
+        await deleteDoc(doc(db, "sahad_general_news", id));
+        showBeautifulAlert('success', 'تم الحذف', 'تم حذف الخبر');
+        window.loadAdminGeneralNewsList();
+    } catch (e) { showBeautifulAlert('error', 'خطأ', 'فشل الحذف'); }
+};
+
+// ======================================================================
+// ==== نظام المشرفين ==================================================
+// ======================================================================
+
+window.currentModeratorTarget = null;
+
+window.searchUserForModerator = async function() {
+    const email = document.getElementById('moderator-email-input').value.trim().toLowerCase();
+    const resultDiv = document.getElementById('moderator-search-result');
+    if (!email || !email.includes('@')) {
+        showBeautifulAlert('warning', 'تنبيه', 'يرجى إدخال بريد إلكتروني صحيح');
+        return;
+    }
+    resultDiv.classList.remove('hidden');
+    resultDiv.innerHTML = '<p class="text-center text-gray-400 py-3 text-xs">جاري البحث...</p>';
+
+    try {
+        const q = query(collection(db, "users"), where("email", "==", email));
+        const snap = await getDocs(q);
+        if (snap.empty) {
+            resultDiv.innerHTML = '<p class="text-center text-red-500 font-bold text-xs py-3">المستخدم غير موجود بهذا البريد</p>';
+            return;
+        }
+        const uDoc = snap.docs[0];
+        const u = uDoc.data();
+        if (u.email === ADMIN_EMAIL) {
+            resultDiv.innerHTML = '<p class="text-center text-yellow-600 font-bold text-xs py-3">هذا المستخدم هو المالك الرئيسي</p>';
+            return;
+        }
+        if (u.role === 'moderator') {
+            resultDiv.innerHTML = '<p class="text-center text-blue-600 font-bold text-xs py-3">هذا المستخدم مشرف بالفعل</p>';
+            return;
+        }
+
+        window.currentModeratorTarget = { uid: uDoc.id, ...u };
+
+        resultDiv.innerHTML = `
+            <div class="bg-indigo-50 rounded-2xl p-4 border border-indigo-100">
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="${u.photo}" class="w-12 h-12 rounded-full border-2 border-white shadow">
+                    <div class="flex-1 min-w-0">
+                        <p class="font-black text-gray-800 text-sm truncate">${u.name}</p>
+                        <p class="text-[10px] text-gray-500 truncate" dir="ltr">${u.email}</p>
+                    </div>
+                </div>
+                <button onclick="openModeratorPermissionsModal('${uDoc.id}')" class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-black py-3 rounded-xl shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-user-shield"></i> تحديد الصلاحيات وإضافته
+                </button>
+            </div>`;
+    } catch (e) {
+        resultDiv.innerHTML = '<p class="text-center text-red-500 font-bold text-xs py-3">حدث خطأ</p>';
+    }
+};
+
+window.openModeratorPermissionsModal = async function(uid) {
+    try {
+        const uSnap = await getDoc(doc(db, "users", uid));
+        if (!uSnap.exists()) { showBeautifulAlert('error', 'خطأ', 'المستخدم غير موجود'); return; }
+        const u = uSnap.data();
+        window.currentModeratorTarget = { uid: uid, ...u };
+
+        document.getElementById('mod-perm-img').src = u.photo || 'https://ui-avatars.com/api/?name=User';
+        document.getElementById('mod-perm-name').innerText = u.name;
+        document.getElementById('mod-perm-email').innerText = u.email;
+
+        const permsList = document.getElementById('mod-permissions-list');
+        const currentPerms = u.permissions || {};
+        let html = '';
+        Object.entries(window.ADMIN_PERMISSIONS_MAP).forEach(([key, info]) => {
+            const checked = currentPerms[key] === true ? 'checked' : '';
+            html += `
+                <label class="flex items-center justify-between bg-gray-50 hover:bg-gray-100 rounded-xl p-3 cursor-pointer transition border border-gray-100">
+                    <div class="flex items-center gap-2">
+                        <i class="fas ${info.icon} text-indigo-500 w-4 text-center"></i>
+                        <span class="font-bold text-xs text-gray-700">${info.label}</span>
+                    </div>
+                    <input type="checkbox" class="mod-perm-checkbox w-5 h-5 text-indigo-600 rounded focus:ring-indigo-500" data-perm="${key}" ${checked}>
+                </label>`;
+        });
+        permsList.innerHTML = html;
+
+        document.getElementById('moderator-permissions-modal').classList.remove('hidden');
+    } catch (e) {
+        showBeautifulAlert('error', 'خطأ', 'فشل تحميل الصلاحيات');
+    }
+};
+
+window.saveModeratorPermissions = async function() {
+    if (!window.currentModeratorTarget) return;
+    const uid = window.currentModeratorTarget.uid;
+    const checkboxes = document.querySelectorAll('.mod-perm-checkbox');
+    const permissions = {};
+    let anyChecked = false;
+    checkboxes.forEach(cb => {
+        const key = cb.getAttribute('data-perm');
+        permissions[key] = cb.checked;
+        if (cb.checked) anyChecked = true;
+    });
+
+    if (!anyChecked) {
+        showBeautifulAlert('warning', 'تنبيه', 'يجب تحديد صلاحية واحدة على الأقل');
+        return;
+    }
+
+    try {
+        showAuthLoading('جاري الحفظ...');
+        await updateDoc(doc(db, "users", uid), {
+            role: 'moderator',
+            permissions: permissions,
+            promotedAt: serverTimestamp(),
+            promotedBy: currentUser.uid
+        });
+        hideAuthLoading();
+        document.getElementById('moderator-permissions-modal').classList.add('hidden');
+        showBeautifulAlert('success', 'تم الحفظ', 'تم تعيين المستخدم كمشرف بنجاح');
+
+        await addDoc(collection(db, "notifications"), {
+            userId: uid,
+            type: 'reward',
+            message: '🎉 تم تعيينك كمشرف في التطبيق! يمكنك الدخول للوحة التحكم من حسابك.',
+            read: false,
+            createdAt: serverTimestamp()
+        });
+
+        window.loadModeratorsList();
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل الحفظ');
+    }
+};
+
+window.removeModeratorRole = async function() {
+    if (!window.currentModeratorTarget) return;
+    if (!confirm("هل أنت متأكد من إزالة صلاحيات المشرف عن هذا المستخدم؟")) return;
+    try {
+        showAuthLoading('جاري الإزالة...');
+        await updateDoc(doc(db, "users", window.currentModeratorTarget.uid), {
+            role: 'user',
+            permissions: {},
+            demotedAt: serverTimestamp(),
+            demotedBy: currentUser.uid
+        });
+        hideAuthLoading();
+        document.getElementById('moderator-permissions-modal').classList.add('hidden');
+        showBeautifulAlert('success', 'تمت الإزالة', 'تم إزالة صلاحيات المشرف');
+        window.loadModeratorsList();
+    } catch (e) {
+        hideAuthLoading();
+        showBeautifulAlert('error', 'خطأ', 'فشل الإزالة');
+    }
+};
+
+window.loadModeratorsList = async function() {
+    const listEl = document.getElementById('moderators-list');
+    if (!listEl) return;
+    listEl.innerHTML = GLOBAL_LOADER_HTML;
+    try {
+        const q = query(collection(db, "users"), where("role", "==", "moderator"));
+        const snap = await getDocs(q);
+        if (snap.empty) {
+            listEl.innerHTML = `
+                <div class="text-center py-10 bg-white rounded-2xl border border-gray-100">
+                    <i class="fas fa-users-slash text-4xl text-gray-300 mb-3"></i>
+                    <p class="text-gray-500 font-bold text-sm">لا يوجد مشرفون حالياً</p>
+                </div>`;
+            return;
+        }
+        let html = '';
+        snap.forEach(d => {
+            const u = d.data();
+            const permCount = u.permissions ? Object.values(u.permissions).filter(v => v === true).length : 0;
+            html += `
+                <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm flex items-center gap-3">
+                    <img src="${u.photo || 'https://ui-avatars.com/api/?name=User'}" class="w-12 h-12 rounded-full border-2 border-indigo-100">
+                    <div class="flex-1 min-w-0">
+                        <p class="font-black text-gray-800 text-sm truncate">${u.name}</p>
+                        <p class="text-[10px] text-gray-500 truncate" dir="ltr">${u.email}</p>
+                        <p class="text-[9px] text-indigo-600 font-bold mt-1"><i class="fas fa-key"></i> ${permCount} صلاحية</p>
+                    </div>
+                    <button onclick="openModeratorPermissionsModal('${d.id}')" class="bg-indigo-50 text-indigo-600 px-3 py-2 rounded-xl font-bold text-xs hover:bg-indigo-100 transition">
+                        <i class="fas fa-edit"></i> تعديل
+                    </button>
+                </div>`;
+        });
+        listEl.innerHTML = html;
+    } catch (e) {
+        listEl.innerHTML = '<p class="text-center text-red-400 py-8">حدث خطأ</p>';
+    }
+};
+
+// ======================================================================
+// ==== دوال فتح الصفحات الفرعية =======================================
+// ======================================================================
+
+window.loadSahadSubPage = function(screenId) {
+    if (screenId === 'screen-sahad-health-qa') {
+        window.loadSahadQA('health');
+        window.markSahadQAAsSeen('health');
+    } else if (screenId === 'screen-sahad-edu-qa') {
+        window.loadSahadQA('education');
+        window.markSahadQAAsSeen('education');
+    } else if (screenId === 'screen-sahad-health-info') {
+        window.loadSahadInfo('health');
+    } else if (screenId === 'screen-sahad-edu-tips') {
+        window.loadSahadInfo('education');
+    } else if (screenId === 'screen-sahad-health-jobs') {
+        window.loadSahadJobs('health');
+    } else if (screenId === 'screen-sahad-edu-jobs') {
+        window.loadSahadJobs('education');
+    } else if (screenId === 'screen-sahad-health-news') {
+        window.loadSahadPosts('health');
+    } else if (screenId === 'screen-sahad-edu-news') {
+        window.loadSahadPosts('education');
+    } else if (screenId === 'screen-sahad-general-news') {
+        window.loadSahadGeneralNews();
+    } else if (screenId === 'screen-admin-sahad-qa-reply') {
+        window.loadAdminQAList();
+    } else if (screenId === 'screen-admin-sahad-info') {
+        window.loadAdminInfoList();
+    } else if (screenId === 'screen-admin-sahad-jobs') {
+        window.loadAdminJobsList();
+    } else if (screenId === 'screen-admin-sahad-posts') {
+        window.loadAdminPostsList();
+    } else if (screenId === 'screen-admin-sahad-general-news') {
+        window.loadAdminGeneralNewsList();
+    } else if (screenId === 'screen-admin-add-moderator') {
+        window.loadModeratorsList();
+    }
 };
 
 </script>

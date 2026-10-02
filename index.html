@@ -3035,7 +3035,7 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 const ADMIN_EMAIL = "en160099@gmail.com";
-const CURRENT_APP_VERSION = 52;
+const CURRENT_APP_VERSION = 54;
 
 async function checkForUpdates() {
     try {
@@ -11277,31 +11277,39 @@ window.findUniversityOpponent = async function(subject, qtype) {
 
 window.buildUniversityQuestions = async function(subject, qtype) {
     let all = [];
+    
     if (window.cachedQuestionsArray && window.cachedQuestionsArray.length > 0) {
         all = window.cachedQuestionsArray;
     } else {
         const localData = await localforage.getItem('all_questions_data');
-        if (localData) { window.cachedQuestionsArray = localData; all = localData; }
+        if (localData) { 
+            window.cachedQuestionsArray = localData; 
+            all = localData; 
+        }
     }
+    
     if (!all || all.length === 0) return [];
 
-    const myDeptId = userData.studyDeptId || null;
-    const myDeptName = userData.studyDeptName || null;
-    const myStageIdx = (userData.studyStageIndex !== undefined && userData.studyStageIndex !== null) ? userData.studyStageIndex : null;
-    const myStageName = userData.studyStageName || null;
+    const myDeptId = String(userData.studyDeptId || '').trim();
+    const myStageIdx = String(userData.studyStageIndex !== undefined && userData.studyStageIndex !== null ? userData.studyStageIndex : '').trim();
+    const targetSubject = String(subject || '').trim();
+    const targetType = String(qtype || '').trim();
 
     const filtered = all.filter(q => {
         if (q.grade !== 'university') return false;
-        if (q.subject !== subject) return false;
-        if (q.type !== qtype) return false;
+        
+        const qSubject = String(q.subject || '').trim();
+        const qType = String(q.type || '').trim();
+        
+        if (qSubject !== targetSubject) return false;
+        if (qType !== targetType) return false;
 
-        const matchDeptById = myDeptId && q.studyDeptId && q.studyDeptId === myDeptId;
-        const matchDeptByName = myDeptName && q.studyDeptName && q.studyDeptName === myDeptName;
-        if (!matchDeptById && !matchDeptByName) return false;
+        const qDeptId = String(q.studyDeptId || '').trim();
+        const qStageIdx = String(q.studyStageIndex !== undefined && q.studyStageIndex !== null ? q.studyStageIndex : '').trim();
 
-        const matchStageByIdx = myStageIdx !== null && q.studyStageIndex !== null && q.studyStageIndex !== undefined && q.studyStageIndex === myStageIdx;
-        const matchStageByName = myStageName && q.studyStageName && q.studyStageName === myStageName;
-        if (!matchStageByIdx && !matchStageByName) return false;
+        if (myDeptId !== '' && qDeptId !== '' && qDeptId !== myDeptId) return false;
+        
+        if (myStageIdx !== '' && qStageIdx !== '' && qStageIdx !== myStageIdx) return false;
 
         return true;
     });
@@ -11310,6 +11318,7 @@ window.buildUniversityQuestions = async function(subject, qtype) {
         const j = Math.floor(Math.random() * (i + 1));
         [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
     }
+    
     return filtered.slice(0, 10);
 };
 
